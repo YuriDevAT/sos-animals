@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.app {
+    width: 414px;
+    height: 736px;
+    margin: 25px auto;
+    background-color: white;
+    box-shadow: 0 0px 6px 6px rgba(0,0,0,0.2);
+    overflow-y: scroll;
+}
+
+.header {
+    position: relative;
+    height: 68px;
+    width: 100%;
+    background-color: purple;
+}
+
+.home-button {
+    width: 75px;
+    height: 100%;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: pink;
+    width: 50%;
+    line-height: 2.5;
+    z-index: 2;
+    display: none;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    padding: 25px;
+    background-color: antiquewhite;
+}
+
+.home p {
+    margin: 20px 0;
+}
+
+.home button {
+    width: 250px;
+    height: 75px;
+    background-color: purple;
+    box-shadow: 0 0 3px 2px rgba(0,0,0,0.19);
+    border: none;
+    margin: 25px auto;
+    color: white;
+}
+
+.report {
+    height: 100vh;
+    width: 100%;
+    padding: 25px;
+}
+
+.report form {
+    margin: 20px 0;
+}
+
+.report label {
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+}
+
+.report button {
+    height: 75px;
+    width: 100px;
+}
+
+.report input {
+    width: 100%;
+    height: 50px;
+}
+
+.position {
+    height: 100vh;
+    width: 100%;
+    padding: 25px;
+    background-color: antiquewhite;
+}
+
+.position input, textarea {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    
+}
+
+.condition {
+    height: 100vh;
+    width: 100%;
+    padding: 25px;
+}
+
+.condition button {
+    height: 75px;
+    width: 100px;
+}
+
+.contact {
+    height: 100vh;
+    width: 100%;
+    padding: 25px;
+    background-color: antiquewhite;
+}
