@@ -2,7 +2,7 @@
 
 This app will help abandoned animals get help from Animal welfare organizations in Romania when people reporting them via this app.
 
-https://sos-animal.netlify.app/ 
+Live view:  [![Netlify Status](https://sos-animal.netlify.app/)
 
 
 # Getting Started with Create React App
