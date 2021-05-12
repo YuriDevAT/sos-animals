@@ -6,7 +6,7 @@ Live view:  [![Netlify Status](https://api.netlify.com/api/v1/badges/f9a7f8d3-58
 
 ## Figma prototype
 
-![Thumbnail](https://github.com/YuriDevAT/Nikki-MyDiary/blob/main/Design%20ohne%20Titel.gif)
+![Thumbnail](https://github.com/YuriDevAT/sos-animals/blob/main/public/sos%20animal.gif)
 
 # Getting Started with Create React App
 
