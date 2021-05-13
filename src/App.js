@@ -10,6 +10,10 @@ function App() {
   return (
     <div className="app">
       <Header />     
+      {/* <Home /> */}
+      {/* <Condition /> */}
+      {/* <ReportAnimal /> */}
+      <ContactInformation />
       <Footer />
     </div>
   );

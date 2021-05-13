@@ -3,14 +3,14 @@ import React from 'react';
 const Home = () => {
 
     return (
-        <div className="home">
-        <h1>SOS Animals</h1>
-        <p>If you see an abandon animal on the street, please report
-            by filling out the form in this app.
-            The animal welfare organisation will be notificated and
-            help the animal as soon as possible.
-        </p>
-        <button>Report an animal</button>
+        <div className="container pt-20 flex flex-col items-center">
+            <h1 className="my-6 bold text-5xl">SOS Animals</h1>
+            <p className="p-8 text-justify text-lg">If you see an abandon animal on the street, please report
+                by filling out the form in this app.
+                The animal welfare organisation will be notificated and
+                help the animal as soon as possible.
+            </p>
+            <button className="bg-blue-700 w-36 h-24 rounded-md shadow-md text-white">Report an animal</button>
         </div>
     )
 }
