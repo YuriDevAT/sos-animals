@@ -8,7 +8,7 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <div className="app">
+    <div className="max-w-sm mx-auto">
       <Header />     
       {/* <Home /> */}
       {/* <Condition /> */}
