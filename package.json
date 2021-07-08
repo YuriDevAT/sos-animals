@@ -3,14 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@craco/craco": "^6.2.0",
+=======
+    "@craco/craco": "^6.1.2",
+>>>>>>> 47c6cdedb593b85252625d7f4799eb5d3f352ac3
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "autoprefixer": "^9.8.6",
     "firebase": "^8.3.1",
+    "postcss": "^7.0.35",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
@@ -37,9 +45,13 @@
       "last 1 safari version"
     ]
   },
+<<<<<<< HEAD
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
   }
+=======
+  "devDependencies": {}
+>>>>>>> 47c6cdedb593b85252625d7f4799eb5d3f352ac3
 }

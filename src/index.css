@@ -1,4 +1,12 @@
 /* ./src/index.css */
 @tailwind base;
 @tailwind components;
+<<<<<<< HEAD
 @tailwind utilities;
+=======
+@tailwind utilities;
+
+.nav-list {
+    display:none;
+}
+>>>>>>> 47c6cdedb593b85252625d7f4799eb5d3f352ac3
