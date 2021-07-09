@@ -10,10 +10,11 @@ function App() {
   return (
     <div className="max-w-sm mx-auto">
       <Header />     
-      {/* <Home /> */}
-      {/* <Condition /> */}
-      {/* <ReportAnimal /> */}
-      <ContactInformation />
+      <Home />
+      {/* <ReportAnimal />
+      <Condition />
+      <Position />
+      <ContactInformation /> */}
       <Footer />
     </div>
   );
