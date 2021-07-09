@@ -8,7 +8,7 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <div className="max-w-sm mx-auto">
+    <div className="max-w-sm mx-auto bg-pink-200">
       <Header />     
       <Home />
       {/* <ReportAnimal />
