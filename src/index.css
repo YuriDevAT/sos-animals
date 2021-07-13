@@ -1,4 +1,7 @@
 /* ./src/index.css */
 @tailwind base;
+html {
+    background-color: seagreen;
+}
 @tailwind components;
 @tailwind utilities;
