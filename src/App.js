@@ -4,9 +4,9 @@ import Formular from './components/Formular';
 
 function App() {
   return (
-      <div className="container max-w-sm mx-auto bg-pink-200 max-h-screen">
+      <div className="container max-w-sm mx-auto max-h-screen font-sans bg-gray-50">
         <Header />         
-            <Formular />
+        <Formular />
       </div>
   );
 }

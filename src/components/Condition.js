@@ -12,7 +12,7 @@ const Condition = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="container pt-20 flex flex-col items-center">
+        <div className="container pt-20 flex flex-col items-center h-screen pt-20">
             <h1 className="my-6 bold text-4xl">Condition of the animal</h1>
             <div className="flex flex-wrap justify-around p-8">
                 <button className="bg-blue-400 w-24 h-24 rounded shadow-sm my-2">Good</button>

@@ -31,7 +31,7 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="position">
+        <div className="h-screen pt-20">
         <h1>Where is the dog?</h1>
         <form>
         <input placeholder="Where is help needed?" />
