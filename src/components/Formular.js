@@ -68,7 +68,7 @@ export default class Formular extends Component {
                 prevStep={ this.prevStep }
                 nextStep={ this.nextStep }
                 handleChange={ this.handleChange }
-                value={ values }
+                values={ values }
                 />)
             case 5:
                 return (
@@ -76,7 +76,7 @@ export default class Formular extends Component {
                 prevStep= { this.prevStep }
                 nextStep={ this.nextStep }
                 handleChange={ this.handleChange }
-                value={ values }
+                values={ values }
                 />)
             case 6:
                 return (
