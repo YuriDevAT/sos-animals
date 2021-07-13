@@ -32,7 +32,7 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
 
     return (
         <div className="h-screen pt-20 px-8">
-        <h1 className="my-12 bold text-4xl text-center">Where is the dog?</h1>
+        <h1 className="my-6 bold text-4xl text-center">Where is the dog?</h1>
         <form className="flex flex-col">
         <label htmlFor="Where is help needed?">Where is help needed?</label>
             <input
@@ -47,7 +47,7 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
             <textarea className="w-full h-56" onChange={handleChange('Where seen')}></textarea>
         </form>
         <button onClick={ Prev } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Previous</button>
-            <button onClick={ Next } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Next</button>
+        <button onClick={ Next } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Next</button>
         </div>
     )
 }
