@@ -12,20 +12,20 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="container flex flex-col items-center h-screen pt-20">
-        <h1 className="my-6 bold text-5xl">Who needs help?</h1>
-        <form className="px-8 text-lg">
+        <div className="container items-center h-screen pt-20 px-8 ">
+        <h1 className="my-6 bold text-4xl text-center">Who needs help?</h1>
+        <form className="text-lg flex flex-col justify-between">
             <label
             htmlFor="Who needs help?">
-            Who needs help?
+            How many dogs need help?
             </label>
             <div className="flex justify-around">
                 <input type="radio" id="one_dog" name="number_of_dogs" value={values.whoNeedsHelp} className="bg-blue-400 w-20 h-20 rounded shadow-sm my-2" />
-                <label htmlFor="One dog">1 dog</label>
+                <label htmlFor="One dog">1</label>
                 <input type="radio" id="two_dogs" name="number_of_dogs" value={values.whoNeedsHelp} className="bg-blue-400 w-20 h-20 rounded shadow-sm my-2" />
-                <label htmlFor="Two dogs">2 dog</label>
+                <label htmlFor="Two dogs">2</label>
                 <input type="radio" id="group_dogs" name="number_of_dogs" value={values.whoNeedsHelp} className="bg-blue-400 w-20 h-20 rounded shadow-sm my-2" />
-                <label htmlFor="Group of dogs">Group of dogs</label>
+                <label htmlFor="Group of dogs">3 or more</label>
             </div>
             <label htmlFor="Type">What type of dog is it?</label>
                 <input
@@ -53,9 +53,10 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
                 value={values.whenSeen}
                 onChange={handleChange('When seen')}
                 />
-            <button onClick={ Prev } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Previous</button>
-            <button onClick={ Next } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Next</button>
+            
         </form>
+        <button onClick={ Prev } className="bg-blue-700 text-white rounded h-16 w-24 shadow-md">Previous</button>
+        <button onClick={ Next } className="bg-blue-700 text-white rounded h-16 w-24 shadow-md">Next</button>
         </div>
     )
 }
