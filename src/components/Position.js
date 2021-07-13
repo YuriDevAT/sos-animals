@@ -31,16 +31,23 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="h-screen pt-20">
-        <h1>Where is the dog?</h1>
-        <form>
-        <input placeholder="Where is help needed?" />
+        <div className="h-screen pt-20 px-8">
+        <h1 className="my-12 bold text-4xl text-center">Where is the dog?</h1>
+        <form className="flex flex-col">
+        <label htmlFor="Where is help needed?">Where is help needed?</label>
+            <input
+                placeholder="loaction, area, neighborhood,.."
+                className="container rounded border py-2 pl-2"
+                type="text"
+                value={values.position}
+                onChange={handleChange('Where seen')}
+                />
             <p><i>Implementing position, google maps</i></p>
             <p>More details (e.g. exact adress, ..)</p>
-            <textarea></textarea>
-            <button onClick={ Prev } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Previous</button>
-            <button onClick={ Next } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Next</button>
+            <textarea className="w-full h-56" onChange={handleChange('Where seen')}></textarea>
         </form>
+        <button onClick={ Prev } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Previous</button>
+            <button onClick={ Next } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Next</button>
         </div>
     )
 }
