@@ -31,7 +31,7 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="h-screen pt-20 px-8">
+        <div className="pt-20 px-8">
         <h1 className="my-6 bold text-4xl text-center">Where is the dog?</h1>
         <form className="flex flex-col">
         <label htmlFor="Where is help needed?">Where is help needed?</label>

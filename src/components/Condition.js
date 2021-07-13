@@ -12,7 +12,7 @@ const Condition = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="container pt-20 h-screen pt-20 px-8">
+        <div className="container pt-20 pt-20 px-8">
             <h1 className="my-6 bold text-4xl text-center">Condition of the animal</h1>
             <form className="">
                 <label htmlFor="Condition of dog">How is the condition of the animal?</label>

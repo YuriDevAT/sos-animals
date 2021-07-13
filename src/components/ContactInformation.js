@@ -12,7 +12,7 @@ const ContactInformation = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="container h-full pt-20 px-8">
+        <div className="container pt-20 px-8">
             <h1 className="mt-6 bold text-4xl text-center">Contact information</h1>
             <p className="mb-6 text-xs text-center">optional*</p>
             <form className="text-lg">

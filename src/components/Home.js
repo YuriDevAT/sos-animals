@@ -6,7 +6,7 @@ const Home = ({ nextStep }) => {
         nextStep();
     }
     return (
-        <div className="container flex flex-col items-center h-screen pt-20 px-8">
+        <div className="container flex flex-col items-center pt-20 px-8">
             <h1 className="my-12 bold text-5xl">SOS Animals</h1>
             <p className="text-justify text-lg">If you see an abandon dog on the street, please help by 
             filling out the form in this app.

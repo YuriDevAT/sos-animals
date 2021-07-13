@@ -12,7 +12,7 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="container items-center h-screen pt-20 px-8 ">
+        <div className="container items-center pt-20 px-8 ">
         <h1 className="my-6 bold text-4xl text-center">Who needs help?</h1>
         <form className="text-lg flex flex-col justify-between">
             <label
