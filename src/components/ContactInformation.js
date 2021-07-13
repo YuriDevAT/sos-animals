@@ -12,10 +12,10 @@ const ContactInformation = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="container pt-20 flex flex-col items-center h-screen pt-20">
-            <h1 className="mt-6 bold text-4xl">Contact information</h1>
-            <p className="mb-6">optional</p>
-            <form className="px-8 text-lg">
+        <div className="container h-full pt-20 px-8">
+            <h1 className="mt-6 bold text-4xl text-center">Contact information</h1>
+            <p className="mb-6 text-xs text-center">optional*</p>
+            <form className="text-lg">
                 <label htmlFor="Name of reporter">Name of reporter</label>
                     <input
                     placeholder="Max Mustermann"
@@ -43,9 +43,10 @@ const ContactInformation = ({ prevStep, nextStep, handleChange, values }) => {
                     onChange={handleChange('Email')}
                     >
                     </input>
-                    <button onClick={ Prev } className="bg-blue-700 w-36 h-24 rounded-md shadow-md text-white">Previous</button>
-                <button onClick={ Next } className="bg-blue-700 w-36 h-24 rounded-md shadow-md text-white">Next</button>
+                    <p className="text-xs text-justify">*If you want to get informed about the dog, leave your contact information!</p>
             </form>
+            <button onClick={ Prev } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Previous</button>
+            <button onClick={ Next } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Report</button>
     </div>
     )
 }
