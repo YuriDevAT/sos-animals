@@ -4,7 +4,6 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     const hide = () => setIsOpen(false);
-    const show = () => setIsOpen(true);
 
     const navigation = [
     { link: '#', text: 'Start' },

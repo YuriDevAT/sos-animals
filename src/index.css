@@ -17,4 +17,25 @@ html {
     left: 0;
 }
 
+.menu {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.cross {
+    background-image: url("./img/plus.svg");
+    background-position: center; 
+    height: 50px;
+    width: 50px;
+}
+
+.hamburger {
+    background-image: url("./img/menu.svg");
+    background-position: center; 
+    height: 50px;
+    width: 50px;
+}
+
 @tailwind utilities;
