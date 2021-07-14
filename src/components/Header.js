@@ -4,6 +4,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     const hide = () => setIsOpen(false);
+    const show = () => setIsOpen(true);
 
     const navigation = [
     { link: '#', text: 'Start' },
@@ -21,7 +22,7 @@ const Header = () => {
                     <ul className={`menu-links ${isOpen ? 'show' : ''} mt-20 bg-yellow-300 w-1/2 shadow-lg z-20`}>
                         {navigation.map((nav) => (
                             <li key={nav.text} className="py-3 border bg-yellow-300 pl-2">
-                                <a href={nav.link} onClick={toggle} onBlur={hide}>{nav.text}</a>
+                                <a href={nav.link} onClick={toggle} onBlur={hide} onFocus={show} className="">{nav.text}</a>
                             </li>
                         ))}
                     </ul>
