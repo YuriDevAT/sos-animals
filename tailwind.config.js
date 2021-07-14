@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'footprint': "url('./img/footprint.png')",
-        'footprints': "url('/img/footprints.png')",
+        // 'footprint': "url('./img/footprint.png')",
+        // 'footprints': "url('/img/footprints.png')",
       })
     },
   },

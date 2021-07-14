@@ -2,7 +2,7 @@
 @tailwind base;
 html {
     background-color: seagreen;
-    background-image: theme('backgroundImage.footprint');
+    /* background-image: theme('backgroundImage.footprint'); */
 }
 @tailwind components;
 @tailwind utilities;
