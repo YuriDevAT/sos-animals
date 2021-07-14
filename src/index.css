@@ -5,4 +5,16 @@ html {
     /* background-image: theme('backgroundImage.footprint'); */
 }
 @tailwind components;
+
+.menu-links {
+    display: none;
+}
+
+.menu-links.show {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 @tailwind utilities;
