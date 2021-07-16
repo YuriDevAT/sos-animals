@@ -13,7 +13,7 @@ const Header = () => {
     ];
 
     return (
-        <header className="bg-blue-600 container h-20 shadow-md fixed max-w-sm">
+        <header className="bg-blue-600 container h-20 shadow-md fixed left-0 mx-auto max-w-sm">
             <div className="h-full relative">
                 <nav className="relative">
                     <button className="w-20 h-20 bg-yellow-300 float-left menu-toggle" onClick={toggle}>

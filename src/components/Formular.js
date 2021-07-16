@@ -80,7 +80,8 @@ export default class Formular extends Component {
                 />)
             case 6:
                 return (
-                <Success />
+                <Success 
+                />
                 )
             default:
         }

@@ -46,8 +46,10 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
             <p>More details (e.g. exact adress, ..)</p>
             <textarea className="w-full h-56" onChange={handleChange('Where seen')}></textarea>
         </form>
+        <footer className="container flex justify-around">
         <button onClick={ Prev } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Previous</button>
         <button onClick={ Next } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Next</button>
+        </footer>
         </div>
     )
 }

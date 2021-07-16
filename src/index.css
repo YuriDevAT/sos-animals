@@ -1,8 +1,9 @@
 /* ./src/index.css */
 @tailwind base;
-html {
-    background-color: seagreen;
-    /* background-image: theme('backgroundImage.footprint'); */
+.body {
+    background-image: url('./img/footprints.png');
+    background-repeat: repeat;
+    background-position: center;
 }
 @tailwind components;
 
@@ -17,6 +18,9 @@ html {
     left: 0;
 }
 
+@tailwind utilities;
+
+
 .menu {
     height: 100%;
     width: 100%;
@@ -24,18 +28,16 @@ html {
     color: black;
 }
 
-.cross {
-    background-image: url("./img/plus.svg");
+.menu.cross {
+    background-image: url('./img/plus.svg');
     background-position: center; 
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 150px;
 }
 
-.hamburger {
-    background-image: url("./img/menu.svg");
+.menu.hamburger {
+    background-image: url('./img/menu.svg');
     background-position: center; 
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 150px;
 }
-
-@tailwind utilities;

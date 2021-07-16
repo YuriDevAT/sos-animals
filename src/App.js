@@ -4,9 +4,13 @@ import Formular from './components/Formular';
 
 function App() {
   return (
-      <div className="container max-w-sm mx-auto font-sans bg-gray-50 h-screen shadow-xl">
-        <Header />         
-        <Formular />
+      <div className="w-screen h-screen bg-green-500 body">
+        <div className="h-md max-w-sm font-sans bg-gray-50 shadow-xl mx-auto">
+          <div className="max-w-xs mx-auto h-full bg-red-100">
+            <Header />         
+            <Formular />
+            </div>
+        </div>
       </div>
   );
 }

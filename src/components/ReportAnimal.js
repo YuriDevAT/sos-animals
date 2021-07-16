@@ -55,8 +55,10 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
                 />
             
         </form>
+        <footer className="container flex justify-around">
         <button onClick={ Prev } className="bg-blue-700 text-white rounded h-16 w-24 shadow-md">Previous</button>
         <button onClick={ Next } className="bg-blue-700 text-white rounded h-16 w-24 shadow-md">Next</button>
+        </footer>
         </div>
     )
 }

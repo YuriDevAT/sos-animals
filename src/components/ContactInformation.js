@@ -45,8 +45,10 @@ const ContactInformation = ({ prevStep, nextStep, handleChange, values }) => {
                     </input>
                     <p className="text-xs text-justify">*If you want to get informed about the dog, leave your contact information!</p>
             </form>
+            <footer className="container flex justify-around">
             <button onClick={ Prev } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Previous</button>
             <button onClick={ Next } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Report</button>
+            </footer>
     </div>
     )
 }
