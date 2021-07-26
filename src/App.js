@@ -1,21 +1,17 @@
+import React from 'react';
 import Header from './components/Header';
-import Footer from './components/Footer';
-import ReportAnimal from './components/ReportAnimal';
-import ContactInformation from './components/ContactInformation';
-import Condition from './components/Condition';
-import Position from './components/Position';
-import Home from './components/Home';
+import Formular from './components/Formular';
 
 function App() {
   return (
-    <div className="max-w-sm mx-auto">
-      <Header />     
-      {/* <Home /> */}
-      {/* <Condition /> */}
-      {/* <ReportAnimal /> */}
-      <ContactInformation />
-      <Footer />
-    </div>
+      <div className="w-screen h-screen bg-green-500 body">
+        <div className="h-md max-w-sm font-sans bg-gray-50 shadow-xl mx-auto">
+          <div className="max-w-xs mx-auto h-full bg-red-100">
+            <Header />         
+            <Formular />
+            </div>
+        </div>
+      </div>
   );
 }
 
