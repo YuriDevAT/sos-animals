@@ -7,7 +7,7 @@ const Header = () => {
     const show = () => setIsOpen(true);
 
     const navigation = [
-    { link: '#', text: 'Start' },
+    { link: '/', text: 'Start' },
     { link: '#', text: 'About' },
     { link: '#', text: 'NGO\'s' }
     ];
