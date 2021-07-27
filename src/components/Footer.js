@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = ({ prevStep, nextStep }) => {
 
     return (
         <footer className="footer">
             <nav className="">
-                <button className="">Previous</button>
-                <button className="">Next</button>
+                <button className="" onClick={prevStep}>Previous</button>
+                <button className="" onClick={nextStep}>Next</button>
             </nav>
         </footer>
 
