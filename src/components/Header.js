@@ -13,8 +13,7 @@ const Header = () => {
     ];
 
     return (
-        <header className="bg-blue-600 container h-20 shadow-md fixed left-0 mx-auto max-w-sm">
-            <div className="h-full relative">
+        <header className="container bg-blue-600 h-20 shadow-md relative">
                 <nav className="relative">
                     <button className="w-20 h-20 bg-yellow-300 float-left menu-toggle" onClick={toggle}>
                         <span className={`menu ${isOpen ? 'cross' : 'hamburger'}`}></span>
@@ -33,9 +32,7 @@ const Header = () => {
                     <div className="w-14 h-14 bg-yellow-300 rounded-full" >2</div>
                     <div className="w-14 h-14 bg-yellow-300 rounded-full" >3</div>
                     <div className="w-14 h-14 bg-yellow-300 rounded-full" >4</div>
-                </div>
-            </div>
-            
+                </div>            
         </header>
 
     )
