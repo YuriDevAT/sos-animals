@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <header className="header">
                 <nav>
-                    <button className="" onClick={toggle}>
+                    <button onClick={toggle}>
                         <i className={`close ${isOpen ? 'open' : ''}`}></i>
                     </button>
                     <ul className={`menu-links ${isOpen ? 'show' : ''}`}>

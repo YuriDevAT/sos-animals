@@ -4,10 +4,10 @@ const Footer = ({ prevStep, nextStep }) => {
 
     return (
         <footer className="footer">
-            <nav className="">
-                <button className="" onClick={prevStep}>Previous</button>
-                <button className="" onClick={nextStep}>Next</button>
-            </nav>
+            <div>
+                <button onClick={prevStep}>Previous</button>
+                <button onClick={nextStep}>Next</button>
+            </div>
         </footer>
 
     )
