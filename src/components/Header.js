@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
         <header className="header">
-                <nav className="">
+                <nav>
                     <button className="" onClick={toggle}>
                         <i className={`close ${isOpen ? 'open' : ''}`}></i>
                     </button>
@@ -26,12 +26,12 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
-                <div className={`menu-bg ${isOpen ? 'show-bg' : ''}`}></div>
+                <div className={`menu-bg ${isOpen ? 'show' : ''}`}></div>
                 <div className="steps">
-                    <div className="">1</div>
-                    <div className="">2</div>
-                    <div className="">3</div>
-                    <div className="">4</div>
+                    <div className="step">1</div>
+                    <div className="step">2</div>
+                    <div className="step">3</div>
+                    <div className="step">4</div>
                 </div>            
         </header>
 

@@ -29,10 +29,12 @@ body {
     background-color: yellowgreen;
     height: 100px;
     position: relative;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .header > nav {
-    
+    position: relative;
+    float: left;
 }
 
 .header > nav > button {
@@ -40,23 +42,58 @@ body {
     height: 100px;
     width: 100px;
     border: none;
-    float: left;
+    cursor: pointer;
 }
 
 .menu-links {
     display: none;
-}
-
-.menu-links .show {
-    display: inline-block;
     position: absolute;
-    top: 100;
-    left: 0;
+    background-color: beige;
+    width: 250px;
+    box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 0;
+    padding: 0;
 }
 
-.header.steps {
+.menu-links > li {
+    padding: 24px 15px;
+    list-style-type: none;
+    border: 2px solid beige;
+}
+
+.menu-links > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-bg {
+    display: none;
+    position: absolute;
+    background-color: black;
+    opacity: .7;
+    width: 475px;
+    height: 606px;
+    top: 100px;
+}
+
+.menu-links.show, .menu-bg.show {
+    display: block;
+}
+
+.header .steps {
+    height: 100px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.step {
+    height: 75px;
+    width: 75px;
+    border-radius: 90%;
+    background-color: wheat;
+    text-align: center;
 }
 
 
