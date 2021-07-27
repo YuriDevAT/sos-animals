@@ -1,7 +1,4 @@
-/* ./src/index.css */
-@tailwind base;
-
-    .bg-img {
+ .bg-img {
         background-image: url('./img/footprints.png');
         background-repeat: repeat;
         background-position: center;
@@ -28,9 +25,7 @@
         height: 150px;
         width: 150px;
     }
-
-@tailwind components;
-    
+  
     .w-404 {
         width: 404px;
     }
@@ -72,6 +67,3 @@
         -webkit-transform: rotate(45deg) translate(-8px, -9px);
         transform: rotate(45deg) translate(-8px, -9px);
       }
-
-
-@tailwind utilities;
