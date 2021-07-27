@@ -48,6 +48,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        transform: ;
     }
 
     .show-bg {
@@ -61,5 +62,17 @@
         height: 656px;
     }
     
+    .bar1.change  {
+        -webkit-transform: rotate(-45deg) translate(-8px, 9px);
+        transform: rotate(-45deg) translate(-8px, 9px);
+      }
+      
+      .bar2.change  {opacity: 0;}
+      
+      .bar3.change  {
+        -webkit-transform: rotate(45deg) translate(-8px, -9px);
+        transform: rotate(45deg) translate(-8px, -9px);
+      }
+
 
 @tailwind utilities;
