@@ -7,6 +7,28 @@
         background-position: center;
     }
 
+    
+    .menu {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        color: black;
+    }
+
+    .cross {
+        background-image: url('./img/plus.svg');
+        background-position: center; 
+        height: 150px;
+        width: 150px;
+    }
+
+    .hamburger {
+        background-image: url('./img/menu.svg');
+        background-position: center; 
+        height: 150px;
+        width: 150px;
+    }
+
 @tailwind components;
     
     .w-404 {
@@ -17,7 +39,7 @@
         height: 736px;
     }
 
-    .menu-links {
+    .menu-links, .menu-bg {
         display: none;
     }
 
@@ -28,25 +50,16 @@
         left: 0;
     }
 
+    .show-bg {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .h-716 {
+        height: 656px;
+    }
+    
+
 @tailwind utilities;
-
-    .menu {
-        height: 100%;
-        width: 100%;
-        text-align: center;
-        color: black;
-    }
-
-    .menu.cross {
-        background-image: url('./img/plus.svg');
-        background-position: center; 
-        height: 150px;
-        width: 150px;
-    }
-
-    .menu.hamburger {
-        background-image: url('./img/menu.svg');
-        background-position: center; 
-        height: 150px;
-        width: 150px;
-    }

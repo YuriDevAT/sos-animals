@@ -16,7 +16,7 @@ const Header = () => {
         <header className="container bg-blue-600 h-20 shadow-md relative">
                 <nav className="relative">
                     <button className="w-20 h-20 bg-yellow-300 float-left menu-toggle" onClick={toggle}>
-                        <span className={`menu ${isOpen ? 'cross' : 'hamburger'}`}></span>
+                        <i className={`container bg-blue-200 ${isOpen ? 'cross' : 'hamburger'}`}></i>
                     </button>
                     <ul className={`menu-links ${isOpen ? 'show' : ''} mt-20 bg-yellow-300 w-1/2 shadow-lg z-20`}>
                         {navigation.map((nav) => (
@@ -26,7 +26,7 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
-                <div className={`menu-links ${isOpen ? 'show' : ''} mt-20 bg-black opacity-60 h-screen w-full z-10`}></div>
+                <div className={`menu-bg ${isOpen ? 'show-bg' : ''} mt-20 bg-black opacity-60 w-full h-716 z-10`}></div>
                 <div className="flex h-full justify-around text-center items-center">
                     <div className="w-14 h-14 bg-yellow-300 rounded-full" >1</div>
                     <div className="w-14 h-14 bg-yellow-300 rounded-full" >2</div>
