@@ -1,43 +1,52 @@
 /* ./src/index.css */
 @tailwind base;
-.body {
-    background-image: url('./img/footprints.png');
-    background-repeat: repeat;
-    background-position: center;
-}
+
+    .bg-img {
+        background-image: url('./img/footprints.png');
+        background-repeat: repeat;
+        background-position: center;
+    }
+
 @tailwind components;
+    
+    .w-404 {
+        width: 404px;
+    }
 
-.menu-links {
-    display: none;
-}
+    .h-736 {
+        height: 736px;
+    }
 
-.menu-links.show {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+    .menu-links {
+        display: none;
+    }
+
+    .menu-links.show {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
 @tailwind utilities;
 
+    .menu {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        color: black;
+    }
 
-.menu {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    color: black;
-}
+    .menu.cross {
+        background-image: url('./img/plus.svg');
+        background-position: center; 
+        height: 150px;
+        width: 150px;
+    }
 
-.menu.cross {
-    background-image: url('./img/plus.svg');
-    background-position: center; 
-    height: 150px;
-    width: 150px;
-}
-
-.menu.hamburger {
-    background-image: url('./img/menu.svg');
-    background-position: center; 
-    height: 150px;
-    width: 150px;
-}
+    .menu.hamburger {
+        background-image: url('./img/menu.svg');
+        background-position: center; 
+        height: 150px;
+        width: 150px;
+    }
