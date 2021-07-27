@@ -22,81 +22,42 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*////////////////////  HEADER ////////////////*/
 
 
+.header {
+    background-color: yellowgreen;
+    height: 100px;
+    position: relative;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.header > nav {
     
-    .menu {
-        height: 100%;
-        width: 100%;
-        text-align: center;
-        color: black;
-    }
+}
 
-    .cross {
-        background-image: url('./img/plus.svg');
-        background-position: center; 
-        height: 150px;
-        width: 150px;
-    }
+.header > nav > button {
+    background-color: beige;
+    height: 100px;
+    width: 100px;
+    border: none;
+    float: left;
+}
 
-    .hamburger {
-        background-image: url('./img/menu.svg');
-        background-position: center; 
-        height: 150px;
-        width: 150px;
-    }
-  
-    .w-404 {
-        width: 404px;
-    }
+.menu-links {
+    display: none;
+}
 
-    .h-736 {
-        height: 736px;
-    }
+.menu-links .show {
+    display: inline-block;
+    position: absolute;
+    top: 100;
+    left: 0;
+}
 
-    .menu-links, .menu-bg {
-        display: none;
-    }
+.header.steps {
+    display: flex;
+    justify-content: space-around;
+}
 
-    .menu-links.show {
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
 
-    .show-bg {
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    .h-716 {
-        height: 656px;
-    }
-    
-    .bar1.change  {
-        -webkit-transform: rotate(-45deg) translate(-8px, 9px);
-        transform: rotate(-45deg) translate(-8px, 9px);
-      }
-      
-      .bar2.change  {opacity: 0;}
-      
-      .bar3.change  {
-        -webkit-transform: rotate(45deg) translate(-8px, -9px);
-        transform: rotate(45deg) translate(-8px, -9px);
-      }
+/*////////////////////  FORMULARE  ////////////////*/

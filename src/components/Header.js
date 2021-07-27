@@ -16,9 +16,7 @@ const Header = () => {
         <header className="header">
                 <nav className="">
                     <button className="" onClick={toggle}>
-                        <div className={`bar1 ${isOpen ? 'change' : ''}`}></div>
-                        <div className={`bar2 ${isOpen ? 'change' : ''}`}></div>
-                        <div className={`bar3 ${isOpen ? 'change' : ''}`}></div>
+                        <i className={`close ${isOpen ? 'open' : ''}`}></i>
                     </button>
                     <ul className={`menu-links ${isOpen ? 'show' : ''}`}>
                         {navigation.map((nav) => (
@@ -29,7 +27,7 @@ const Header = () => {
                     </ul>
                 </nav>
                 <div className={`menu-bg ${isOpen ? 'show-bg' : ''}`}></div>
-                <div className="">
+                <div className="steps">
                     <div className="">1</div>
                     <div className="">2</div>
                     <div className="">3</div>
