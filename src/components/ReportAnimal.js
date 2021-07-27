@@ -31,7 +31,6 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
                 <input
                 type="text"
                 placeholder="young, old, Laprador, Husky,.."
-                value=""
                 onChange={handleChange}
                 />
             <label htmlFor="size">How big is the dog?</label>
@@ -47,7 +46,6 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
             <input
                 placeholder="morning, noon, 4pm,.."
                 type="text"
-                value=""
                 onChange={handleChange}
                 />
         </form>

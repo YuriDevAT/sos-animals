@@ -38,7 +38,6 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
                 <input
                     placeholder="loaction, area, neighborhood,.."
                     type="text"
-                    value=""
                     onChange={handleChange('Where seen')}
                     />
                 <p><i>Implementing position, google maps</i></p>

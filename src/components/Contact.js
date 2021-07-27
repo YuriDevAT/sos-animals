@@ -20,7 +20,6 @@ const Contact = ({ prevStep, nextStep, handleChange, values }) => {
                     <input
                     placeholder="Max Mustermann"
                     type="text"
-                    value=""
                     onChange={handleChange('Name')}
                     >
                     </input>
@@ -28,7 +27,6 @@ const Contact = ({ prevStep, nextStep, handleChange, values }) => {
                     <input
                     placeholder="+496674453634"
                     type="text"
-                    value=""
                     onChange={handleChange('Number')}
                     >
                     </input>
@@ -36,7 +34,6 @@ const Contact = ({ prevStep, nextStep, handleChange, values }) => {
                     <input
                     placeholder="maxmustermann@gmail.com"
                     type="text"
-                    value=""
                     onChange={handleChange('Email')}
                     >
                     </input>
