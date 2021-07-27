@@ -12,9 +12,9 @@ const Condition = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="condition">
+        <div className="form">
             <h1 className="">Condition of the animal</h1>
-            <form className="">
+            <form className="condition">
                 <label htmlFor="Condition of dog">How is the condition of the animal?</label>
                 <div className="">
                     <input type="radio" id="good" name="condition_of_dog" value={values.condition} className="" />
@@ -30,8 +30,8 @@ const Condition = ({ prevStep, nextStep, handleChange, values }) => {
                 </div>                  
             </form>
             <footer className="">
-            <button onClick={ Prev } className="">Previous</button>
-            <button onClick={ Next } className="">Next</button>
+                <button onClick={ Prev } className="">Previous</button>
+                <button onClick={ Next } className="">Next</button>
             </footer>
         </div>
     )

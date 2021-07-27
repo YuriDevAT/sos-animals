@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContactInformation = ({ prevStep, nextStep, handleChange, values }) => {
+const Contact = ({ prevStep, nextStep, handleChange, values }) => {
     const Next = e => {
         e.preventDefault();
         nextStep();
@@ -12,10 +12,10 @@ const ContactInformation = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="contact">
+        <div className="form">
             <h1 className="">Contact information</h1>
-            <p className="">optional*</p>
-            <form className="">
+            <h6 className="">optional*</h6>
+            <form className="contact">
                 <label htmlFor="Name of reporter">Name of reporter</label>
                     <input
                     placeholder="Max Mustermann"
@@ -38,12 +38,12 @@ const ContactInformation = ({ prevStep, nextStep, handleChange, values }) => {
                     <input
                     placeholder="maxmustermann@gmail.com"
                     className=""
-                    type="email"
+                    type="text"
                     value={values.email}
                     onChange={handleChange('Email')}
                     >
                     </input>
-                    <p className="">*If you want to get informed about the dog, leave your contact information!</p>
+                    <h6 className="">*If you want to get informed about the dog, leave your contact information!</h6>
             </form>
             <footer className="">
             <button onClick={ Prev } className="">Previous</button>
@@ -53,4 +53,4 @@ const ContactInformation = ({ prevStep, nextStep, handleChange, values }) => {
     )
 }
 
-export default ContactInformation;
+export default Contact;

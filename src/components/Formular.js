@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Condition from './Condition';
-import ContactInformation from './ContactInformation';
+import Contact from './Contact';
 import Home from './Home';
 import Location from './Location';
 import ReportAnimal from './ReportAnimal';
@@ -72,7 +72,7 @@ export default class Formular extends Component {
                 />)
             case 5:
                 return (
-                <ContactInformation
+                <Contact
                 prevStep= { this.prevStep }
                 nextStep={ this.nextStep }
                 handleChange={ this.handleChange }

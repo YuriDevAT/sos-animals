@@ -31,25 +31,24 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="location">
-        <h1 className="">Where is the dog?</h1>
-        <form className="">
-        <label htmlFor="Where is help needed?">Where is help needed?</label>
-            <input
-                placeholder="loaction, area, neighborhood,.."
-                className=""
-                type="text"
-                value={values.position}
-                onChange={handleChange('Where seen')}
-                />
-            <p><i>Implementing position, google maps</i></p>
-            <p>More details (e.g. exact adress, ..)</p>
-            <textarea className="w-full h-56" onChange={handleChange('Where seen')}></textarea>
-        </form>
-        <footer className="">
-        <button onClick={ Prev } className="">Previous</button>
-        <button onClick={ Next } className="">Next</button>
-        </footer>
+        <div className="form">
+            <h1 className="">Where is the dog?</h1>
+            <form className="">
+            <label htmlFor="Where is help needed?">Where is help needed?</label>
+                <input
+                    placeholder="loaction, area, neighborhood,.."
+                    className=""
+                    type="text"
+                    onChange={handleChange('Where seen')}
+                    />
+                <p><i>Implementing position, google maps</i></p>
+                <label for="more-details">More details (e.g. exact adress, ..)</label>
+                <textarea id="more-details" className="" onChange={handleChange('Where seen')}></textarea>
+            </form>
+            <footer className="">
+                <button onClick={ Prev } className="">Previous</button>
+                <button onClick={ Next } className="">Next</button>
+            </footer>
         </div>
     )
 }

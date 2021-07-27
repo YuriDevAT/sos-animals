@@ -12,7 +12,7 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="report">
+        <div className="form">
         <h1 className="">Who needs help?</h1>
         <form className="">
             <label
@@ -56,8 +56,8 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
             
         </form>
         <footer className="">
-        <button onClick={ Prev } className="">Previous</button>
-        <button onClick={ Next } className="">Next</button>
+            <button onClick={ Prev } className="">Previous</button>
+            <button onClick={ Next } className="">Next</button>
         </footer>
         </div>
     )

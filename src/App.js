@@ -7,7 +7,7 @@ const App = () => {
   return (
         <div className="app">   
           <Header />
-          {/* <Formular /> */}
+          <Formular />
         </div>
   );
 }
