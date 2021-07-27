@@ -1,4 +1,9 @@
- .bg-img {
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
         background-image: url('./img/footprints.png');
         background-repeat: repeat;
         background-position: center;

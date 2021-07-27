@@ -6,16 +6,16 @@ const Home = ({ nextStep }) => {
         nextStep();
     }
     return (
-        <div className="container flex flex-col items-center px-12">
-            <h1 className="my-12 bold text-5xl">SOS Animals</h1>
-            <p className="text-justify text-lg">
+        <div className="home">
+            <h1 className="">SOS Animals</h1>
+            <p className="">
                 If you see an abandon dog on the street, please help by 
                 filling out the form in this app.
                 An animal welfare organisation nearby will be notified and
                 helps the animal as soon as possible.
             </p>
             <button
-            className="bg-blue-700 w-48 h-36 rounded-md shadow-md text-white text-xl mt-16"
+            className=""
             onClick={ Next }>Report <br />animal</button>
         </div>
     )

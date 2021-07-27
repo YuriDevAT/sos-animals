@@ -12,26 +12,26 @@ const Condition = ({ prevStep, nextStep, handleChange, values }) => {
     }
 
     return (
-        <div className="container pt-20 px-8 relative">
-            <h1 className="my-6 bold text-4xl text-center">Condition of the animal</h1>
+        <div className="condition">
+            <h1 className="">Condition of the animal</h1>
             <form className="">
                 <label htmlFor="Condition of dog">How is the condition of the animal?</label>
-                <div className="flex flex-wrap justify-around items-center">
-                    <input type="radio" id="good" name="condition_of_dog" value={values.condition} className="bg-blue-400 w-12 h-12 rounded shadow-sm my-2" />
+                <div className="">
+                    <input type="radio" id="good" name="condition_of_dog" value={values.condition} className="" />
                     <label htmlFor="Dog is fine">Good</label>
-                    <input type="radio" id="anxious" name="condition_of_dog" value={values.condition} className="bg-blue-400 w-12 h-12 rounded shadow-sm my-2" />
+                    <input type="radio" id="anxious" name="condition_of_dog" value={values.condition} className="" />
                     <label htmlFor="Dog is anxious">Anxious</label>
-                    <input type="radio" id="aggressive" name="condition_of_dog" value={values.condition} className="bg-blue-400 w-12 h-12 rounded shadow-sm my-2" />
+                    <input type="radio" id="aggressive" name="condition_of_dog" value={values.condition} className="" />
                     <label htmlFor="Dog is aggressive">Agressive</label>
-                    <input type="radio" id="wounded" name="condition_of_dog" value={values.condition} className="bg-blue-400 w-12 h-12 rounded shadow-sm my-2" />
+                    <input type="radio" id="wounded" name="condition_of_dog" value={values.condition} className="" />
                     <label htmlFor="Dog is wounded">Wounded</label>
-                    <input type="radio" id="unkown" name="condition_of_dog" value={values.condition} className="bg-blue-400 w-12 h-12 rounded shadow-sm my-2" />
+                    <input type="radio" id="unkown" name="condition_of_dog" value={values.condition} className="" />
                     <label htmlFor="I cannot tell">Unknown</label>
                 </div>                  
             </form>
-            <footer className="container flex justify-around">
-            <button onClick={ Prev } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Previous</button>
-            <button onClick={ Next } className="bg-indigo-900 text-white rounded h-16 w-24 shadow-md">Next</button>
+            <footer className="">
+            <button onClick={ Prev } className="">Previous</button>
+            <button onClick={ Next } className="">Next</button>
             </footer>
         </div>
     )
