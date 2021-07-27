@@ -16,8 +16,8 @@ body {
     }
 
 .app {
-    height: 706px;
-    width: 475px;
+    height: 568px;
+    width: 320px;
     background-color: aqua;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -27,7 +27,7 @@ body {
 
 .header {
     background-color: yellowgreen;
-    height: 100px;
+    height: 75px;
     position: relative;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -39,8 +39,8 @@ body {
 
 .header > nav > button {
     background-color: beige;
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     border: none;
     cursor: pointer;
 }
@@ -49,7 +49,7 @@ body {
     display: none;
     position: absolute;
     background-color: beige;
-    width: 250px;
+    width: 175px;
     box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.2);
     z-index: 1;
     margin: 0;
@@ -72,9 +72,9 @@ body {
     position: absolute;
     background-color: black;
     opacity: .7;
-    width: 475px;
-    height: 606px;
-    top: 100px;
+    width: 320px;
+    height: 493px;
+    top: 75px;
 }
 
 .menu-links.show, .menu-bg.show {
@@ -82,15 +82,15 @@ body {
 }
 
 .header .steps {
-    height: 100px;
+    height: 75px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .step {
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     border-radius: 90%;
     background-color: wheat;
     text-align: center;
