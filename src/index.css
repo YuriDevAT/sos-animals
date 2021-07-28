@@ -129,17 +129,20 @@ h2 {
     line-height: 1.5;
 }
 
-#home-btn, #success-btn {
-    background-color: var(--yellow);
-    color: var(--grey);
+.btn {
     border: none;
+    cursor: pointer;
+    background-color: var(--yellow);
     border-radius: 4px;
-    padding: 30px 24px;
-    font-size: 14px;
+    color: var(--grey);
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
-    cursor: pointer;
     box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.2);
+}
+
+#home-btn, #success-btn {
+    padding: 30px 24px;
+    font-size: 14px;
 }
 
 h1 {
@@ -167,14 +170,6 @@ footer {
 .nav-btn {
     padding: 24px 18px;
     width: 100px;
-    background-color: var(--yellow);
-    color: var(--grey);
-    border: none;
-    border-radius: 4px;
-    font-family: 'Inter', sans-serif;
-    text-transform: uppercase;
-    cursor: pointer;
-    box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.2);
 }
 
 .nav-btn.prev:before {
