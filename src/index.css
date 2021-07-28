@@ -16,11 +16,8 @@ html {
 }
 
 body {
-        background-image: url(./img/footprints.png);
-        background-repeat: no-repeat;
-        background-position: bottom left;
+        background: var(--lightBlue) url(./img/footprints.png) no-repeat bottom left;
         background-size: 500px;
-        background-color: var(--lightBlue);
         height: 100vh;
         width: 100vw;
         margin: 0;
