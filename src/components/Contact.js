@@ -14,7 +14,6 @@ const Contact = ({ prevStep, nextStep, handleChange, values }) => {
     return (
         <div className="form">
             <h1>Contact information</h1>
-            <h6>optional*</h6>
             <form className="contact">
                 <label htmlFor="Name of reporter">Name of reporter</label>
                     <input
