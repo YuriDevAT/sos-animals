@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto+Slab&display=swap');
+
+:root {
+    --darkBlue: #6798C0;
+    --leightBlue: #99D6EA;
+    --white: #ffffff;
+    --grey: #FFFDF7;
+    --leightYellow: #FDD85D;
+    --yellow: #FDC921 ;
+  }
+
 html {
     box-sizing: border-box;
     margin: 0;
@@ -5,20 +16,23 @@ html {
 
 body {
         background-image: url('./img/footprints.png');
-        background-repeat: repeat;
-        background-position: center;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 500px;
+        background-color: var(--white);
         height: 100vh;
         width: 100vw;
         margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: 'Inter', sans-serif;
     }
 
 .app {
     height: 568px;
     width: 320px;
-    background-color: aqua;
+    background-color: var(--grey);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -108,7 +122,9 @@ body {
 
 .home h1 {
     font-size: 32px;
+    color: var(--darkBlue);
 }
+
 .home > p {
     text-align: justify;
 }
@@ -129,6 +145,7 @@ button {
 h1 {
     font-size: 22px;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
 
 form {
