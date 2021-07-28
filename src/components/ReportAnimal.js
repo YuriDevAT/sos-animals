@@ -19,7 +19,7 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
             htmlFor="Who needs help?">
             How many dogs need help?
             </label>
-            <div>
+            <div className="radio-btn">
                 <input type="radio" id="one_dog" name="number_of_dogs" value={values.whoNeedsHelp} />
                 <label htmlFor="One dog">1</label>
                 <input type="radio" id="two_dogs" name="number_of_dogs" value={values.whoNeedsHelp} />
@@ -34,7 +34,7 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
                 onChange={handleChange}
                 />
             <label htmlFor="size">How big is the dog?</label>
-            <div>
+            <div className="radio-btn">
                 <input type="radio" id="small" name="size_of_dogs" value={values.sizeOfDog} />
                 <label htmlFor="Small dog">Small</label>
                 <input type="radio" id="middle" name="size_of_dogs" value={values.sizeOfDog} />
@@ -50,8 +50,8 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
                 />
         </form>
         <footer>
-            <button onClick={ Prev }>Previous</button>
-            <button onClick={ Next }>Next</button>
+            <button onClick={Prev} className="nav-btn prev">Previous</button>
+            <button onClick={Next} className="nav-btn next">Next</button>
         </footer>
         </div>
     )
