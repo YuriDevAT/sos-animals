@@ -19,50 +19,50 @@ const clerkFrontendApi = process.env.REACT_APP_CLERK_FRONTEND_API;
 const App = () => {
 
   return (
-    <Router>
-    <ClerkProviderWithNavigate>
-      <Switch>
-{/* Public routes, accesible whether or not a user is signed in */}
-        <Route path="/public">
-          <div>
-            Report animal without signing in. <Link to="/">Return home.</Link>
-          </div>
-        </Route>
-        <Route path="/sign-in/(.*)?">
-          <SignIn routing="path" path="/sign-in" />
-        </Route>
-        <Route path="/sign-up/(.*)?">
-          <SignUp routing="path" path="/sign-up" />
-        </Route>
-{/* Private routes, accesible only if a user is signed in */}
-        <PrivateRoute path="/private">
-          <div>
-            Your Dashboard. <Link to="/">Return home.</Link>
-          </div>
-        </PrivateRoute>
-        <PrivateRoute path="/user/(.*)?">
-          <UserProfile routing="path" path="/user" />
-        </PrivateRoute>
-{/* Catch-all route will render if no other route renders */}
-        <Route>
-      <SignedIn>
-        <UserButton />
-        <Greeting />
-        <div>Your are signed in.</div>
-        <Navigation />
-        {/* <div className="app">   
+//     <Router>
+//     <ClerkProviderWithNavigate>
+//       <Switch>
+// {/* Public routes, accesible whether or not a user is signed in */}
+//         <Route path="/public">
+//           <div>
+//             Report animal without signing in. <Link to="/">Return home.</Link>
+//           </div>
+//         </Route>
+//         <Route path="/sign-in/(.*)?">
+//           <SignIn routing="path" path="/sign-in" />
+//         </Route>
+//         <Route path="/sign-up/(.*)?">
+//           <SignUp routing="path" path="/sign-up" />
+//         </Route>
+// {/* Private routes, accesible only if a user is signed in */}
+//         <PrivateRoute path="/private">
+//           <div>
+//             Your Dashboard. <Link to="/">Return home.</Link>
+//           </div>
+//         </PrivateRoute>
+//         <PrivateRoute path="/user/(.*)?">
+//           <UserProfile routing="path" path="/user" />
+//         </PrivateRoute>
+// {/* Catch-all route will render if no other route renders */}
+//         <Route>
+//       <SignedIn>
+//         <UserButton />
+//         <Greeting />
+//         <div>Your are signed in.</div>
+//         <Navigation />
+        <div className="app">   
           <Header />
           <Formular />
-        </div> */}
-      </SignedIn>
-      <SignedOut>
-        <div>You are signed out.</div>
-        <Navigation />
-      </SignedOut>
-      </Route>
-      </Switch>
-    </ClerkProviderWithNavigate>
-    </Router>
+        </div> 
+  //     </SignedIn>
+  //     <SignedOut>
+  //       <div>You are signed out.</div>
+  //       <Navigation />
+  //     </SignedOut>
+  //     </Route>
+  //     </Switch>
+  //   </ClerkProviderWithNavigate>
+  //   </Router>
   );
 }
 
