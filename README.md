@@ -13,7 +13,7 @@ The backend functionality is completely missing since I am not familiar with the
 ## Figma prototype and live view
 Live view by clicking the badge:  [![Netlify Status](https://api.netlify.com/api/v1/badges/f9a7f8d3-58ca-44ed-a038-ae8d2efd31a5/deploy-status)](https://sos-animal.netlify.app/)
 
-![Thumbnail](https://github.com/YuriDevAT/sos-animals/blob/main/public/sos-animal.gif)
+![Thumbnail](https://github.com/YuriDevAT/sos-animals/blob/main/public/img/sos-animal.gif)
 
 
 # Getting Started with Create React App
