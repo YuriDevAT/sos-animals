@@ -7,6 +7,7 @@
     --grey: #FFFDF7;
     --leightYellow: #FDD85D;
     --yellow: #FDC921 ;
+    --black: #000;
   }
 
 html {
@@ -40,33 +41,48 @@ body {
 
 
 .header {
-    background-color: yellowgreen;
+    background-color: var(--grey);
     height: 75px;
     position: relative;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .header > nav {
     position: relative;
-    float: left;
+    height: 100%;
 }
 
-.header > nav > button {
-    background-color: beige;
-    height: 75px;
-    width: 75px;
+#menu-btn {
+    background-color: var(--grey);
+    color: var(--black);
     border: none;
+    padding: 12px 16px;
+    font-size: 20px;
     cursor: pointer;
-    box-shadow: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#menu-btn:hover {
+    color: var(--darkBlue);
+}
+
+h2 {
+    font-size: 18px;
+    color: var(--darkBlue);
+    float: right;
+    font-family: 'Roboto Slab', serif;
+    padding-right: 15px;
 }
 
 .menu-links {
     display: none;
     position: absolute;
-    background-color: beige;
+    background-color: var(--grey);
     width: 175px;
-    box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    top: 48px;
     margin: 0;
     padding: 0;
 }
@@ -74,22 +90,24 @@ body {
 .menu-links > li {
     padding: 24px 15px;
     list-style-type: none;
-    border: 2px solid beige;
+}
+
+.menu-links > li:hover {
+    background-color: var(--leightBlue);
 }
 
 .menu-links > li > a {
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 
 .menu-bg {
     display: none;
     position: absolute;
     background-color: black;
-    opacity: .7;
-    width: 320px;
-    height: 493px;
-    top: 75px;
+    opacity: 0.5;
+    width: 100%;
+    height: 568px;
 }
 
 .menu-links.show, .menu-bg.show {
@@ -120,16 +138,11 @@ body {
     align-items: center;
 }
 
-.home h1 {
-    font-size: 32px;
-    color: var(--darkBlue);
-}
-
 .home > p {
     text-align: justify;
 }
 
-button {
+.btn {
     height: 100px;
     width: 150px;
     cursor: pointer;
