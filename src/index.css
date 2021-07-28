@@ -16,7 +16,7 @@ html {
 }
 
 body {
-        background-image: url('./img/footprints.png');
+        background-image: url(./img/footprints.png);
         background-repeat: no-repeat;
         background-position: bottom left;
         background-size: 500px;

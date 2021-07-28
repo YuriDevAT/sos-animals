@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '/img/home.png';
+import logo from '../img/home.png';
 
 const Home = ({ nextStep }) => {
     const Next = e => {
