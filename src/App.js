@@ -20,10 +20,9 @@ const App = () => {
 
   return (
     <div className="app"> 
-    <Header />
-          <Formular />
-          </div>
-          
+      <Header />
+      <Formular />
+    </div>
   );
 }
 
