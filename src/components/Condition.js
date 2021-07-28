@@ -16,7 +16,7 @@ const Condition = ({ prevStep, nextStep, handleChange, values }) => {
             <h1>Condition of the animal</h1>
             <form className="condition">
                 <label htmlFor="Condition of dog">How is the condition of the animal?</label>
-                <div>
+                <div className="radio-btn">
                     <input type="radio" id="good" name="condition_of_dog" value={values.condition} />
                     <label htmlFor="Dog is fine">Good</label>
                     <input type="radio" id="anxious" name="condition_of_dog" value={values.condition} />
@@ -30,8 +30,8 @@ const Condition = ({ prevStep, nextStep, handleChange, values }) => {
                 </div>                  
             </form>
             <footer>
-                <button onClick={ Prev }>Previous</button>
-                <button onClick={ Next }>Next</button>
+                <button onClick={Prev} className="nav-btn prev">Previous</button>
+                <button onClick={Next} className="nav-btn next">Next</button>
             </footer>
         </div>
     )

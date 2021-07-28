@@ -186,15 +186,12 @@ footer {
 .radio-btn {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 input[type="text"] {
     padding: 15px 4px;
     font-family: 'Inter', sans-serif;
-}
-
-.condition {
-    justify-content: flex-start;
 }
 
 .map-container {
@@ -212,6 +209,14 @@ input[type="text"] {
     left: 0;
     margin: 12px;
     border-radius: 4px;
+}
+
+.condition {
+    justify-content: flex-start;
+}
+
+.condition > div {
+    margin-top: 20px;
 }
 
 h6 {
