@@ -22,8 +22,8 @@ const Header = () => {
                     </button>
                     <ul className={`menu-links ${isOpen ? 'show' : ''}`}>
                         {navigation.map((nav) => (
-                            <li key={nav.text} className="">
-                                <a href={nav.link} onBlur={hide} onClick={toggle} onFocus={show} className="">{nav.text}</a>
+                            <li key={nav.text}>
+                                <a href={nav.link} onBlur={hide} onClick={toggle} onFocus={show}>{nav.text}</a>
                             </li>
                         ))}
                     </ul>
