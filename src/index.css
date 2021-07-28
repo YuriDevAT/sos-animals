@@ -167,12 +167,14 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    z-index: 1;
 }
 
 .nav-btn {
     padding: 24px 18px;
     width: 100px;
     background-color: var(--yellow);
+    color: var(--grey);
     border: none;
     border-radius: 4px;
     font-family: 'Inter', sans-serif;
@@ -196,12 +198,7 @@ input[type="text"] {
 }
 
 .map-container {
-    height: 250px;
-    position: relative;
-}
-
-.map {
-    height: 100%;
+    height: 568px;
 }
 
 .map-sidebar {
@@ -211,15 +208,10 @@ input[type="text"] {
     font-family: monospace;
     z-index: 1;
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
     margin: 12px;
     border-radius: 4px;
-}
-
-textarea {
-    height: 250px;
-    resize: none;
 }
 
 h6 {

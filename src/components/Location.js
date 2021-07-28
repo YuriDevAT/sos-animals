@@ -44,25 +44,21 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
         <div className="form">
             <h1>Where is the dog?</h1>
             <form>
-            <label htmlFor="Where is help needed?">Where is help needed?</label>
-                <input
-                    placeholder="loaction, area, neighborhood,.."
-                    type="text"
-                    onChange={handleChange('Where seen')}
-                    />
-                <div className="map-container">
                     <div className="map-sidebar">
                         Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
                     </div>
-                    <div className="map" ref={mapContainer}>
+                    <div className="map-container" ref={mapContainer}>
                     </div>
-                </div>
-                <label for="more-details">More details (e.g. exact adress, ..)</label>
-                <textarea id="more-details" onChange={handleChange('Where seen')}></textarea>
+                <input
+                    placeholder="loaction, area, neighborhood,.."
+                    type="text"
+                    aria-label="Where is help needed?"
+                    onChange={handleChange('Where seen')}
+                    />
             </form>
             <footer>
-                <button onClick={ Prev }>Previous</button>
-                <button onClick={ Next }>Next</button>
+                <button onClick={Prev} className="nav-btn prev">Previous</button>
+                <button onClick={Next} className="nav-btn next">Next</button>
             </footer>
         </div>
     )
