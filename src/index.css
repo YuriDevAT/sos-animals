@@ -116,7 +116,7 @@ h2 {
 
 /*////////////////////  FORMULAR  ////////////////*/
 
-.form, .home, .success {
+.form, .home, .login, .success {
     height: 518px;
     width: 80%;
     margin: 0 auto;
@@ -145,6 +145,19 @@ h2 {
     cursor: pointer;
     box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.2);
 }
+
+#login-btn {
+    background-color: var(--grey);
+    border: none;
+    text-decoration: underline;
+    color: var(--darkBlue);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+#login-btn:after {
+    content: ' \00BB';
+  }
 
 h1 {
     font-size: 24px;
@@ -181,6 +194,18 @@ footer {
     text-transform: uppercase;
     cursor: pointer;
     box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.2);
+}
+
+.nav-btn.prev:before {
+    content: '\00AB ';
+    padding-right: 2px;
+    margin-left: -5px;
+}
+
+.nav-btn.next:after {
+    content: '\00BB';
+    padding-left: 2px;
+    margin-right: -5px;
 }
 
 .radio-btn {
