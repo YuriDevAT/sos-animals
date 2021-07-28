@@ -2,10 +2,10 @@
 
 :root {
     --darkBlue: #6798C0;
-    --leightBlue: #99D6EA;
+    --lightBlue: #99D6EA;
     --white: #ffffff;
     --grey: #FFFDF7;
-    --leightYellow: #FDD85D;
+    --lightYellow: #FDD85D;
     --yellow: #FDC921 ;
     --black: #000;
   }
@@ -20,7 +20,7 @@ body {
         background-repeat: no-repeat;
         background-position: bottom left;
         background-size: 500px;
-        background-color: var(--white);
+        background-color: var(--lightBlue);
         height: 100vh;
         width: 100vw;
         margin: 0;
@@ -65,7 +65,7 @@ body {
 }
 
 #menu-btn:hover {
-    color: var(--leightBlue);
+    color: var(--lightBlue);
 }
 
 h2 {
@@ -93,7 +93,7 @@ h2 {
 }
 
 .menu-links > li:hover {
-    background-color: var(--leightBlue);
+    background-color: var(--lightBlue);
 }
 
 .menu-links > li > a {
