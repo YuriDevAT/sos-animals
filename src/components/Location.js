@@ -1,9 +1,8 @@
-import React from 'react';
-import axios from 'axios';
+import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
-import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
-import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
+mapboxgl.accessToken = process.env.REACT_APP_MAP_ACCESS_TOKEN;
 
 const Position = ({ prevStep, nextStep, handleChange, values }) => {
     const Next = e => {
@@ -16,6 +15,31 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
         prevStep();
     }
 
+    const mapContainer = useRef(null);
+    const map = useRef(null);
+    const [lng, setLng] = useState(26.1);
+    const [lat, setLat] = useState(44.4);
+    const [zoom, setZoom] = useState(9);
+
+    useEffect(() => {
+        if (map.current) return;
+        map.current = new mapboxgl.Map({
+            container: mapContainer.current,
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [lng, lat],
+            zoom: zoom
+        });
+    });
+
+    useEffect(() => {
+        if(!map.current) return;
+        map.current.on('move', () => {
+            setLng(map.current.getCenter().lng.toFixed(4));
+            setLat(map.current.getCenter().lat.toFixed(4));
+            setZoom(map.current.getZoom().toFixed(2));
+        });
+    });
+
     return (
         <div className="form">
             <h1>Where is the dog?</h1>
@@ -26,31 +50,13 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
                     type="text"
                     onChange={handleChange('Where seen')}
                     />
-                    {/* Map Display here */}
-                <div className="map-holder">
-                    <div id="map"></div>
+                <div className="map-container">
+                    <div className="map-sidebar">
+                        Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
+                    </div>
+                    <div className="map" ref={mapContainer}>
+                    </div>
                 </div>
-                {/* Coordinates Display here */}
-                <div className="dislpay-arena">
-                    <div className="coordinates-header">
-                    <h3>Current Coordinates</h3>
-                    <p>Latitude:</p>
-                    <p>Longitude:</p>
-                    </div>
-                    <div className="coordinates-header">
-                    <h3>Current Location</h3>
-                    <div className="form-group">
-                        <input
-                        type="text"
-                        className="location-control"
-                        value="location"
-                        readonly
-                        />
-                    </div>
-                    <button type="button" class="copy-btn">Copy</button>
-                    </div>
-                    <button type="button" class="location-btn">Get Location</button>
-                    </div>
                 <label for="more-details">More details (e.g. exact adress, ..)</label>
                 <textarea id="more-details" onChange={handleChange('Where seen')}></textarea>
             </form>
