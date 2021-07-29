@@ -161,6 +161,11 @@ h2 {
     font-size: 14px;
 }
 
+.success-btn {
+    height: 120px;
+    margin-top: 36px;
+}
+
 h1 {
     font: 24px 'Roboto Slab', serif;
     text-align: center;
