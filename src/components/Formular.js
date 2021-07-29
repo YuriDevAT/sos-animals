@@ -45,43 +45,47 @@ export default class Formular extends Component {
                 return (
                     <Home
                     nextStep={ this.nextStep }
-                    />)
+                    />
+                )
             case 2:
                 return (
-                <ReportAnimal
-                prevStep={ this.prevStep }
-                nextStep={ this.nextStep }
-                handleChange={ this.handleChange }
-                values={ values }
-                />)
+                    <ReportAnimal
+                    prevStep={ this.prevStep }
+                    nextStep={ this.nextStep }
+                    handleChange={ this.handleChange }
+                    values={ values }
+                    />
+                )
             case 3:
                 return (
-                <Location
-                prevStep={ this.prevStep }
-                nextStep={ this.nextStep }
-                handleChange={ this.handleChange }
-                values={ values }
-                />)
+                    <Location
+                    prevStep={ this.prevStep }
+                    nextStep={ this.nextStep }
+                    handleChange={ this.handleChange }
+                    values={ values }
+                    />
+                )
             case 4:
                 return (
-                <Condition
-                prevStep={ this.prevStep }
-                nextStep={ this.nextStep }
-                handleChange={ this.handleChange }
-                values={ values }
-                />)
+                    <Condition
+                    prevStep={ this.prevStep }
+                    nextStep={ this.nextStep }
+                    handleChange={ this.handleChange }
+                    values={ values }
+                    />
+                )
             case 5:
                 return (
-                <Contact
-                prevStep= { this.prevStep }
-                nextStep={ this.nextStep }
-                handleChange={ this.handleChange }
-                values={ values }
-                />)
+                    <Contact
+                    prevStep={ this.prevStep }
+                    nextStep={ this.nextStep }
+                    handleChange={ this.handleChange }
+                    values={ values }
+                    />
+                )
             case 6:
                 return (
-                <Success 
-                />
+                    <Success />
                 )
             default:
         }

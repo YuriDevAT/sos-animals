@@ -6,7 +6,7 @@ const Success = () => {
             <h1>Successfully reported!</h1>
             <p id="success-p">Thank you for working together to save the animals.</p>
             <a href="/">
-            <button type="button" id="success-btn" className="btn">Report another animal</button>
+                <button type="button" className="btn success-btn">Report another animal</button>
             </a>
         </div>
     )

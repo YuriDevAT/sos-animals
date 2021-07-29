@@ -16,7 +16,7 @@ const Home = ({ nextStep }) => {
                 An animal welfare organisation nearby will be notified and
                 helps the animal as soon as possible.
             </p>
-            <button onClick={Next} className="btn" id="home-btn">Report animal</button>
+            <button onClick={Next} className="btn home-btn">Report animal</button>
         </div>
     )
 }

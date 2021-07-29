@@ -140,7 +140,7 @@ h2 {
     box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.2);
 }
 
-#home-btn, #success-btn {
+.home-btn, .success-btn {
     padding: 30px 24px;
     font-size: 14px;
 }
@@ -184,19 +184,18 @@ footer {
     margin-right: -5px;
 }
 
-.radio-btn {
+.radio-btn, .checkbox {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-input[type="text"] {
+input[type="text"], input[type="tel"], input[type="email"] {
     padding: 15px 4px;
     font-family: 'Inter', sans-serif;
 }
 
 .map-container {
-    height: 566px;
+    height: 270px;
 }
 
 .map-sidebar {
@@ -216,10 +215,14 @@ input[type="text"] {
     justify-content: flex-start;
 }
 
-.condition > div {
+.condition .checkbox {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.condition .checkbox > label {
+    margin: 10px 0;
 }
 
 h6 {
