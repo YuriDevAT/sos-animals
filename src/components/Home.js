@@ -11,10 +11,10 @@ const Home = ({ nextStep }) => {
         <div className="home">
             <img src={logo} alt="" width="320" height="auto" />
             <p id="home-p">
-                If you see an abandon dog on the street, please help by 
+                If you see an abandoned dog on the street, please help by 
                 filling out the form in this app.
                 An animal welfare organisation nearby will be notified and
-                helps the animal as soon as possible.
+                help the animal as soon as possible.
             </p>
             <button onClick={Next} className="btn home-btn">Report animal</button>
         </div>
