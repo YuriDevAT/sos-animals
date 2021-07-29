@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Condition from './Condition';
+import ExtraInformation from './ExtraInformation';
 import Home from './Home';
 import Location from './Location';
-import ReportAnimal from './ReportAnimal';
+import Condition from './Condition';
 import Success from './Success';
 
 export default class Formular extends Component {
@@ -61,7 +61,7 @@ export default class Formular extends Component {
                 )
             case 2:
                 return (
-                    <ReportAnimal
+                    <Condition
                     prevStep={ this.prevStep }
                     nextStep={ this.nextStep }
                     handleChange={ this.handleChange }
@@ -70,7 +70,7 @@ export default class Formular extends Component {
                 )
             case 3:
                 return (
-                    <Location
+                    <ExtraInformation
                     prevStep={ this.prevStep }
                     nextStep={ this.nextStep }
                     handleChange={ this.handleChange }
@@ -79,7 +79,7 @@ export default class Formular extends Component {
                 )
             case 4:
                 return (
-                    <Condition
+                    <Location
                     prevStep={ this.prevStep }
                     nextStep={ this.nextStep }
                     handleChange={ this.handleChange }

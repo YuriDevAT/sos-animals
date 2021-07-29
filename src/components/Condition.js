@@ -13,10 +13,25 @@ const Condition = ({ prevStep, nextStep, values }) => {
 
     return (
         <div className="form">
-            <h1>Condition of the dog</h1>
-            <form className="condition">
+            <h1>Who needs help?</h1>
+            <form>
+                <label
+                htmlFor="Who needs help?">
+                How many dogs need help?
+                </label>
+                <div className="radio-btn">
+                    <label htmlFor="one">
+                    <input type="radio" id="one" name="number_of_dogs" value={values.one} />
+                    1</label>
+                    <label htmlFor="two">
+                    <input type="radio" id="two" name="number_of_dogs" value={values.two} />
+                    2</label>
+                    <label htmlFor="more">
+                    <input type="radio" id="more" name="number_of_dogs" value={values.many} />
+                    more</label>
+                </div>
                 <label htmlFor="condition">How is the condition of the dog?</label>
-                <div className="checkbox">
+                <div className="checkbox-container large">
                     <label htmlFor="good">
                     <input type="checkbox" id="good" name="condition_of_dog" value={values.good} />
                     Good</label>
@@ -32,11 +47,11 @@ const Condition = ({ prevStep, nextStep, values }) => {
                     <label htmlFor="unknown">
                     <input type="checkbox" id="unknown" name="condition_of_dog" value={values.unknown} />
                     Unknown</label>
-                </div>                  
+                </div> 
             </form>
             <footer>
                 <button onClick={Prev} className="btn nav-btn prev">Previous</button>
-                <button onClick={Next} className="btn nav-btn submit" type="submit">Report</button>
+                <button onClick={Next} className="btn nav-btn next">Next</button>
             </footer>
         </div>
     )
