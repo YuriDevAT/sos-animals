@@ -15,26 +15,26 @@ const Header = () => {
 
     return (
         <header className="header">
-                <nav>
-                    <button
-                    onClick={toggle}
-                    id="menu-btn"
-                    aria-label="menu-bar">
-                        <i className="fa fa-bars"></i>
-                    </button>
-                    <ul className={`menu-links ${isOpen ? 'show' : ''}`}>
-                        <li className="user">
-                            <UserButton />
-                        </li>
-                        {navigation.map((nav) => (
-                            <li key={nav.text}>
-                                <a href={nav.link} onBlur={hide} onClick={toggle} onFocus={show}>{nav.text}</a>
-                            </li>
-                        ))}
-                    </ul>
-                     <h2>SOS Animals</h2>
-                </nav>
-                <div className={`menu-bg ${isOpen ? 'show' : ''}`}></div>   
+            <nav>
+                <button
+                onClick={toggle}
+                id="menu-btn"
+                aria-label="menu-bar">
+                    <i className="fa fa-bars"></i>
+                </button>
+                <ul className={`menu-links ${isOpen ? 'show' : ''}`}>
+                    <li className="user">
+                        <UserButton />
+                    </li>
+                    {navigation.map((nav) => (
+                    <li key={nav.text}>
+                        <a href={nav.link} onBlur={hide} onClick={toggle} onFocus={show}>{nav.text}</a>
+                    </li>
+                    ))}
+                </ul>
+                <h2>SOS Animals</h2>
+            </nav>
+            <div className={`menu-bg ${isOpen ? 'show' : ''}`}></div>   
         </header>
     )
 }
