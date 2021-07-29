@@ -9,13 +9,9 @@ import {
   SignedOut,
   SignIn,
   SignUp,
-  UserButton,
-  UserProfile,
-  useUser,
 } from '@clerk/clerk-react';
 import { 
-  BrowserRouter as Router, 
-  Link, 
+  BrowserRouter as Router,
   Route, 
   Switch, 
   useHistory 
@@ -28,79 +24,27 @@ function App() {
   return (
     <Router>
       <ClerkProviderWithNavigate>
-        <div className="app">
-          <Header />
-        <Formular />
-        {/* <Switch>
-          <Route path="/public">
-            <div>
-              Reached the public route. <Link to="/">Return home.</Link>
-            </div>
-          </Route>
+        <Switch>
           <Route path="/sign-in/(.*)?">
             <SignIn routing="path" path="/sign-in" />
           </Route>
           <Route path="/sign-up/(.*)?">
             <SignUp routing="path" path="/sign-up" />
           </Route>
-
-          <PrivateRoute path="/private">
-            <div>
-              Reached the private route. <Link to="/">Return home.</Link>
-            </div>
-          </PrivateRoute>
-          <PrivateRoute path="/user/(.*)?">
-            <UserProfile routing="path" path="/user" />
-          </PrivateRoute>
-
           <Route>
             <SignedIn>
-              <UserButton />
-              <Greeting />
-              <div>You are signed in. You can access both routes.</div>
-              <Navigation />
+              <div className="app">
+                <Header />
+                <Formular />
+              </div>
             </SignedIn>
             <SignedOut>
-              <div>You are signed out. You can access the public route.</div>
-              <Navigation />
+              <RedirectToSignIn />
             </SignedOut>
           </Route>
-        </Switch> */}
-        </div>
+        </Switch>
       </ClerkProviderWithNavigate>
     </Router>
-  );
-}
-
-function Navigation() {
-  return (
-    <ul>
-      <li>
-        <Link to="/public">Public route</Link>
-      </li>
-      <li>
-        <Link to="/private">Private route</Link>
-      </li>
-    </ul>
-  );
-}
-
-function Greeting() {
-  const { firstName } = useUser();
-  return <div>Hello, {firstName}!</div>;
-}
-
-function PrivateRoute(props) {
-  // If the route matches but the user is not signed in, redirect to /sign-in
-  return (
-    <>
-      <SignedIn>
-        <Route {...props} />
-      </SignedIn>
-      <SignedOut>
-        <RedirectToSignIn />
-      </SignedOut>
-    </>
   );
 }
 

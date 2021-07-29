@@ -1,4 +1,5 @@
 import React,  { useState } from 'react';
+import { UserButton } from '@clerk/clerk-react';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,10 +8,10 @@ const Header = () => {
     const show = () => setIsOpen(true);
 
     const navigation = [
-    { link: '/', text: 'Start' },
-    { link: '#', text: 'About' },
-    { link: '#', text: 'NGO\'s' }
-    ];
+        { link: '/', text: 'Start' },
+        { link: '#', text: 'About' },
+        { link: '#', text: 'NGO\'s' }
+        ];
 
     return (
         <header className="header">
@@ -21,6 +22,7 @@ const Header = () => {
                         <i className="fa fa-bars"></i>
                     </button>
                     <ul className={`menu-links ${isOpen ? 'show' : ''}`}>
+                        <UserButton />
                         {navigation.map((nav) => (
                             <li key={nav.text}>
                                 <a href={nav.link} onBlur={hide} onClick={toggle} onFocus={show}>{nav.text}</a>
