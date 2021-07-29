@@ -18,7 +18,8 @@ const Header = () => {
                 <nav>
                     <button
                     onClick={toggle}
-                    id="menu-btn">
+                    id="menu-btn"
+                    aria-label="menu-bar">
                         <i className="fa fa-bars"></i>
                     </button>
                     <ul className={`menu-links ${isOpen ? 'show' : ''}`}>

@@ -140,7 +140,7 @@ h2 {
     cursor: pointer;
     background-color: var(--yellow);
     border-radius: 4px;
-    color: var(--grey);
+    color: var(--white);
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.2);
