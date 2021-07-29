@@ -101,6 +101,10 @@ h2 {
     z-index: 3;
 }
 
+.cl-component.cl-user-button-popup {
+    z-index: 1000;
+}
+
 .menu-bg {
     display: none;
     position: absolute;
