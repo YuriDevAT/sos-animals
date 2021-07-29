@@ -2,6 +2,8 @@
 
 This app will help abandoned animals get help from Animal welfare organizations in Romania when people reporting them via this app.
 
+![Thumbnail](https://github.com/YuriDevAT/sos-animals/blob/main/public/thumbnail-sos.png)
+
 The idea is that when reporting a dog, the user will start filling out a form about the dog's situation and location.
 If people want to leave their contact information in the last stage, this should give them the possibility to stay connected with the NGOs and get information about the condition of the dog.
 When submitting the form, the form should be sent to the nearest NGO station.
