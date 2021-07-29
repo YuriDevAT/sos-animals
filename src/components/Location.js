@@ -43,7 +43,7 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
     return (
         <div className="form">
             <h1>Where is the dog?</h1>
-            {/* <form>
+            <form>
                     <div className="map-sidebar">
                         Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
                     </div>
@@ -55,7 +55,7 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
                     aria-label="Where is help needed?"
                     onChange={handleChange('Where seen')}
                     />
-            </form> */}
+            </form>
             <footer>
                 <button onClick={Prev} className="btn nav-btn prev">Previous</button>
                 <button onClick={Next} className="btn nav-btn next">Next</button>
