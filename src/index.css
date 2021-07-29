@@ -7,6 +7,7 @@
     --grey: #FFFDF7;
     --lightYellow: #FDD85D;
     --yellow: #FDC921;
+    --darkGrey: rgba(35, 55, 75, 0.9);
     --black: #151515;
   }
 
@@ -16,16 +17,16 @@ html {
 }
 
 body {
-        background: var(--lightBlue) url(./img/footprints.png) no-repeat bottom left;
-        background-size: 500px;
-        height: 100vh;
-        width: 100vw;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Inter', sans-serif;
-    }
+    background: var(--lightBlue) url(./img/footprints.png) no-repeat bottom left;
+    background-size: 500px;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
 
 .app {
     height: 568px;
@@ -34,7 +35,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*////////////////////  HEADER ////////////////*/
+/*------------------  HEADER ------------------*/
 
 
 .header {
@@ -64,10 +65,9 @@ body {
 }
 
 h2 {
-    font-size: 18px;
+    font: 18px 'Roboto Slab', serif;
     color: var(--darkBlue);
     float: right;
-    font-family: 'Roboto Slab', serif;
     padding-right: 15px;
 }
 
@@ -125,7 +125,7 @@ h2 {
     display: block;
 }
 
-/*////////////////////  FORMULAR  ////////////////*/
+/* ----------- FORMULAR -------------- */
 
 .form, .home, .login, .success {
     height: 518px;
@@ -162,9 +162,8 @@ h2 {
 }
 
 h1 {
-    font-size: 24px;
+    font: 24px 'Roboto Slab', serif;
     text-align: center;
-    font-family: 'Roboto Slab', serif;
     text-transform: capitalize;
 }
 
@@ -204,7 +203,7 @@ footer {
     background-color: var(--darkBlue);
 }
 
-.radio-btn, .checkbox {
+.radio-btn, .checkbox-container {
     display: flex;
     justify-content: space-between;
 }
@@ -219,11 +218,10 @@ input[type="text"], input[type="tel"], input[type="email"] {
 }
 
 .map-sidebar {
-    background-color: rgba(35, 55, 75, 0.9);
-    color: #fff;
+    background-color: var(--darkGrey);
+    color: var(--white);
     padding: 6px 12px;
-    font-family: monospace;
-    font-size: 10px;
+    font: 10px monospace;
     z-index: 1;
     position: absolute;
     top: 50px;

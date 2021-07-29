@@ -20,12 +20,15 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
                 How many dogs need help?
                 </label>
                 <div className="radio-btn">
+                    <label htmlFor="one">
                     <input type="radio" id="one" name="number_of_dogs" value={values.one} />
-                    <label htmlFor="one">1</label>
+                    1</label>
+                    <label htmlFor="two">
                     <input type="radio" id="two" name="number_of_dogs" value={values.two} />
-                    <label htmlFor="two">2</label>
+                    2</label>
+                    <label htmlFor="more">
                     <input type="radio" id="more" name="number_of_dogs" value={values.many} />
-                    <label htmlFor="more">more</label>
+                    more</label>
                 </div>
                 <label htmlFor="type">What type of dog is it?</label>
                     <input
@@ -35,13 +38,19 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
                     onChange={handleChange('typeOfDog')}
                     />
                 <label htmlFor="size">How big is the dog?</label>
-                <div className="checkbox">
+                <div className="checkbox-container">
+                    <label htmlFor="Small dog" className="checkbox">
                     <input type="checkbox" id="small" name="size_of_dog" value={values.small} />
-                    <label htmlFor="Small dog">Small</label>
+                    <span className="checkmark"></span>
+                    Small</label>
+                    <label htmlFor="Middle dog" className="checkbox">
                     <input type="checkbox" id="middle" name="size_of_dog" value={values.middle} />
-                    <label htmlFor="Middle dog">Middle</label>
+                    <span className="checkmark"></span>
+                    Middle</label>
+                    <label htmlFor="Big dog" className="checkbox">
                     <input type="checkbox" id="big" name="size_of_dog" value={values.large} />
-                    <label htmlFor="Big dog">Big</label>
+                    <span className="checkmark"></span>
+                    Big</label>
                 </div>   
                 <label htmlFor="When did you see it?">When did you see the dog?</label>
                 <input
