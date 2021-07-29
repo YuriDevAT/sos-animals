@@ -54,15 +54,15 @@ export default class Formular extends Component {
                 handleChange={ this.handleChange }
                 values={ values }
                 />)
+            // case 3:
+            //     return (
+            //     <Location
+            //     prevStep={ this.prevStep }
+            //     nextStep={ this.nextStep }
+            //     handleChange={ this.handleChange }
+            //     values={ values }
+            //     />)
             case 3:
-                return (
-                <Location
-                prevStep={ this.prevStep }
-                nextStep={ this.nextStep }
-                handleChange={ this.handleChange }
-                values={ values }
-                />)
-            case 4:
                 return (
                 <Condition
                 prevStep={ this.prevStep }
@@ -70,7 +70,7 @@ export default class Formular extends Component {
                 handleChange={ this.handleChange }
                 values={ values }
                 />)
-            case 5:
+            case 4:
                 return (
                 <Contact
                 prevStep= { this.prevStep }
@@ -78,7 +78,7 @@ export default class Formular extends Component {
                 handleChange={ this.handleChange }
                 values={ values }
                 />)
-            case 6:
+            case 5:
                 return (
                 <Success 
                 />
