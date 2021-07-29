@@ -48,7 +48,7 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
                     placeholder="morning, noon, 4pm,.."
                     type="text"
                     value={values.when}
-                    onChange={handleChange('whenSeen')}
+                    onChange={handleChange('when')}
                     />
             </form>
             <footer>
