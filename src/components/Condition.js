@@ -36,7 +36,7 @@ const Condition = ({ prevStep, nextStep, values }) => {
             </form>
             <footer>
                 <button onClick={Prev} className="btn nav-btn prev">Previous</button>
-                <button onClick={Next} className="btn nav-btn next">Next</button>
+                <button onClick={Next} className="btn nav-btn submit" type="submit">Report</button>
             </footer>
         </div>
     )

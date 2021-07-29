@@ -178,16 +178,20 @@ footer {
     width: 100px;
 }
 
-.nav-btn.prev:before {
+.nav-btn.prev::before {
     content: '\00AB ';
     padding-right: 2px;
     margin-left: -5px;
 }
 
-.nav-btn.next:after {
+.nav-btn.next::after {
     content: '\00BB';
     padding-left: 2px;
     margin-right: -5px;
+}
+
+.nav-btn.submit {
+    background-color: var(--darkBlue);
 }
 
 .radio-btn, .checkbox {
