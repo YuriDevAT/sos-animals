@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto+Slab&display=swap');
 
 :root {
-    --darkBlue: #6798C0;
+    --darkBlue: #274c77;
     --lightBlue: #99D6EA;
     --white: #ffffff;
     --grey: #FFFDF7;
-    --lightYellow: #FDD85D;
-    --yellow: #FDC921;
-    --darkGrey: rgba(35, 55, 75, 0.9);
+    --yellow: #ffd60a;
+    --darkBlueOp: rgba(39, 76, 119, 0.9);
     --black: #151515;
   }
 
@@ -35,8 +34,9 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*------------------  HEADER ------------------*/
-
+/*------------------------------------------------------------------
+[HEADER]
+*/
 
 .header {
     background-color: var(--grey);
@@ -125,9 +125,11 @@ h2 {
     display: block;
 }
 
-/* ----------- FORMULAR -------------- */
+/*------------------------------------------------------------------
+[FORMULAR]
+*/
 
-.form, .home, .login, .success {
+.form, .home, .success {
     height: 518px;
     width: 80%;
     margin: 0 auto;
@@ -150,7 +152,7 @@ h2 {
     cursor: pointer;
     background-color: var(--yellow);
     border-radius: 4px;
-    color: var(--white);
+    color: var(--black);
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.2);
@@ -170,13 +172,6 @@ h1 {
     font: 24px 'Roboto Slab', serif;
     text-align: center;
     text-transform: capitalize;
-}
-
-form {
-    height: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 footer {
@@ -206,24 +201,40 @@ footer {
 
 .nav-btn.submit {
     background-color: var(--darkBlue);
+    color: var(--white);
 }
 
 .radio-btn, .checkbox-container {
     display: flex;
     justify-content: space-between;
+    margin: 10px 0 25px;
 }
 
-input[type="text"], input[type="tel"], input[type="email"] {
-    padding: 15px 4px;
-    font-family: 'Inter', sans-serif;
+.checkbox-container.large {
+    flex-direction: column;
 }
+
+.checkbox-container.large > label {
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    padding: 15px 0;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    margin: 10px 0 25px;
+}
+
+::placeholder {
+    margin-left: 4px;
+  }
 
 .map-container {
     height: 270px;
 }
 
 .map-sidebar {
-    background-color: var(--darkGrey);
+    background-color: var(--darkBlueOp);
     color: var(--white);
     padding: 6px 12px;
     font: 10px monospace;
@@ -232,20 +243,6 @@ input[type="text"], input[type="tel"], input[type="email"] {
     top: 50px;
     margin: 12px;
     border-radius: 4px;
-}
-
-.condition {
-    justify-content: flex-start;
-}
-
-.condition .checkbox {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.condition .checkbox > label {
-    margin: 10px 0;
 }
 
 h6 {
