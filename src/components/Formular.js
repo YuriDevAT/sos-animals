@@ -10,12 +10,20 @@ export default class Formular extends Component {
 
     state = {
         step: 1,
-        whoNeedsHelp: '',
-        typeOfDog: '',
-        sizeOfDog: '',
-        whenSeen: '',
+        one: '',
+        two: '',
+        more: '',
+        type: '',
+        small: '',
+        middle: '',
+        large: '',
+        when: '',
         position: '',
-        condition: '',
+        good: '',
+        anxious: '',
+        aggressive: '',
+        wounded: '',
+        unknown: '',
         name: '',
         number: '',
         email: ''
@@ -37,8 +45,16 @@ export default class Formular extends Component {
 
      render() {
         const { step } = this.state;
-        const { whoNeedsHelp, typeOfDog, sizeOfDog, whenSeen, position, condition, name, number, email } = this.state;
-        const values = { whoNeedsHelp, typeOfDog, sizeOfDog, whenSeen, position, condition, name, number, email }
+        const { one, two, many,
+                type, small, middle, large,
+                when, position,
+                good, anxious, aggressive, wounded, unknown,
+                name, number, email } = this.state;
+        const values = { one, two, many,
+                type, small, middle, large,
+                when, position,
+                good, anxious, aggressive, wounded, unknown,
+                name, number, email }
         
         switch (step) {
             case 1:

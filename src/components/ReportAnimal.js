@@ -20,12 +20,12 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
                 How many dogs need help?
                 </label>
                 <div className="radio-btn">
-                    <input type="radio" id="one_dog" name="number_of_dogs" value={values.whoNeedsHelp} />
-                    <label htmlFor="One dog">1</label>
-                    <input type="radio" id="two_dogs" name="number_of_dogs" value={values.whoNeedsHelp} />
-                    <label htmlFor="Two dogs">2</label>
-                    <input type="radio" id="group_dogs" name="number_of_dogs" value={values.whoNeedsHelp} />
-                    <label htmlFor="Group of dogs">more</label>
+                    <input type="radio" id="one" name="number_of_dogs" value={values.one} />
+                    <label htmlFor="one">1</label>
+                    <input type="radio" id="two" name="number_of_dogs" value={values.two} />
+                    <label htmlFor="two">2</label>
+                    <input type="radio" id="more" name="number_of_dogs" value={values.many} />
+                    <label htmlFor="more">more</label>
                 </div>
                 <label htmlFor="type">What type of dog is it?</label>
                     <input
@@ -36,18 +36,18 @@ const ReportAnimal = ({ prevStep, nextStep, handleChange, values }) => {
                     />
                 <label htmlFor="size">How big is the dog?</label>
                 <div className="checkbox">
-                    <input type="checkbox" id="small" name="size_of_dogs" value={values.sizeOfDog} />
+                    <input type="checkbox" id="small" name="size_of_dog" value={values.small} />
                     <label htmlFor="Small dog">Small</label>
-                    <input type="checkbox" id="middle" name="size_of_dogs" value={values.sizeOfDog} />
+                    <input type="checkbox" id="middle" name="size_of_dog" value={values.middle} />
                     <label htmlFor="Middle dog">Middle</label>
-                    <input type="checkbox" id="big" name="size_of_dogs" value={values.sizeOfDog} />
+                    <input type="checkbox" id="big" name="size_of_dog" value={values.large} />
                     <label htmlFor="Big dog">Big</label>
                 </div>   
                 <label htmlFor="When did you see it?">When did you see the dog?</label>
                 <input
                     placeholder="morning, noon, 4pm,.."
                     type="text"
-                    value={values.whenSeen}
+                    value={values.when}
                     onChange={handleChange('whenSeen')}
                     />
             </form>
