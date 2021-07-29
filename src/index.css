@@ -101,7 +101,13 @@ h2 {
 }
 
 .cl-component.cl-user-button-popup {
+    margin-left: 300px;
     z-index: 1000;
+}
+@media screen and (max-width: 990px) {
+    .cl-component.cl-user-button-popup {
+        margin-left: 0;
+    }
 }
 
 .menu-bg {
