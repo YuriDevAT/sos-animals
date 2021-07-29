@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Condition from './Condition';
-import Contact from './Contact';
 import Home from './Home';
 import Location from './Location';
 import ReportAnimal from './ReportAnimal';
@@ -23,10 +22,7 @@ export default class Formular extends Component {
         anxious: '',
         aggressive: '',
         wounded: '',
-        unknown: '',
-        name: '',
-        number: '',
-        email: ''
+        unknown: ''
     }
 
     prevStep = () => {
@@ -49,12 +45,12 @@ export default class Formular extends Component {
                 type, small, middle, large,
                 when, position,
                 good, anxious, aggressive, wounded, unknown,
-                name, number, email } = this.state;
+                } = this.state;
         const values = { one, two, many,
                 type, small, middle, large,
                 when, position,
                 good, anxious, aggressive, wounded, unknown,
-                name, number, email }
+                }
         
         switch (step) {
             case 1:
@@ -91,15 +87,6 @@ export default class Formular extends Component {
                     />
                 )
             case 5:
-                return (
-                    <Contact
-                    prevStep={ this.prevStep }
-                    nextStep={ this.nextStep }
-                    handleChange={ this.handleChange }
-                    values={ values }
-                    />
-                )
-            case 6:
                 return (
                     <Success />
                 )
