@@ -17,7 +17,6 @@ import {
   useHistory 
 } from 'react-router-dom';
 
-// Retrieve Clerk settings from the environment
 const clerkFrontendApi = process.env.REACT_APP_CLERK_FRONTEND_API;
 
 function App() {
