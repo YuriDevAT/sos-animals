@@ -96,6 +96,10 @@ h2 {
     color: var(--black);
 }
 
+.user {
+    padding-left: 5px;
+}
+
 .menu-bg {
     display: none;
     position: absolute;

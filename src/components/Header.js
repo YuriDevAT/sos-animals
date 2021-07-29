@@ -22,7 +22,9 @@ const Header = () => {
                         <i className="fa fa-bars"></i>
                     </button>
                     <ul className={`menu-links ${isOpen ? 'show' : ''}`}>
-                        <UserButton />
+                        <li className="user">
+                            <UserButton />
+                        </li>
                         {navigation.map((nav) => (
                             <li key={nav.text}>
                                 <a href={nav.link} onBlur={hide} onClick={toggle} onFocus={show}>{nav.text}</a>
