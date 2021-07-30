@@ -14,9 +14,15 @@ When submitting the form, the form should be sent to the nearest NGO station.
 
 The backend functionality is completely missing since I am not familiar with the backend at this stage. So, there is no connection to a database, any NGOs and no way to actually send the form.
 
+I am also currently fixing bugs of the deployment procress. So please enjoy the preview video instead :smile:
+
+https://www.youtube.com/watch?v=ApFcJl691IM
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-With Clerk, you can add beautiful, high-conversion Sign Up and Sign In forms to your React application in minutes. After signing in, Clerk empowers your users to take control of their account security with multi-factor authentication and device management. If you've ever found yourself thinking, "there's got to be a better way to build auth" - Clerk was built with you in mind. 
-https://clerk.dev/
+# Getting Started with Clerk
+With [Clerk](https://clerk.dev/), you can add beautiful, high-conversion Sign Up and Sign In forms to your React application in minutes. After signing in, Clerk empowers your users to take control of their account security with multi-factor authentication and device management. If you've ever found yourself thinking, "there's got to be a better way to build auth" - Clerk was built with you in mind. 
