@@ -16,7 +16,7 @@ The backend functionality is completely missing since I am not familiar with the
 
 I am also currently fixing bugs of the deployment procress. So please enjoy the preview video instead :smile:
 
-https://www.youtube.com/watch?v=ApFcJl691IM
+https://user-images.githubusercontent.com/54622834/127658950-b1964a1c-dfc3-4853-be04-9c14a35f569c.mov
 
 
 
