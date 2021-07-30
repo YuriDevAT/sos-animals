@@ -16,7 +16,7 @@ import {
   useHistory 
 } from 'react-router-dom';
 
-const clerkFrontendApi = process.env.REACT_APP_CLERK_FRONTEND_API;
+const clerkFrontendApi = "clerk.yadfy.gse5r.lcl.dev";
 
 function App() {
   return (
