@@ -17,7 +17,7 @@ When submitting the form, the form should be sent to the nearest NGO station.
 
 The backend functionality is completely missing since I am not familiar with the backend at this stage. So, there is no connection to a database, any NGOs and no way to actually send the form.
 
-I am also currently fixing problems happending during the deployment procress. So please enjoy the preview video instead :smile:
+I am also currently fixing problems happending during the deployment procress. But you can still clone the project and open it in localhost, or enjoy the preview video below instead :smile:
 
 https://user-images.githubusercontent.com/54622834/127658950-b1964a1c-dfc3-4853-be04-9c14a35f569c.mov
 
