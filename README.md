@@ -2,7 +2,8 @@
 
 This app will help abandoned animals get help from Animal welfare organizations in Romania when people reporting them via this app.
 I created this project to participate in my first hackathon - Clerk x Hashnode Hackathon June 2021. So, check out my article about the project and my experience in the hackathon. 
-[SOS Animals app - a project for the Clerk x Hashnode Hackathon](https://yuridevat.hashnode.dev/sos-animals-hackathon-project)
+
+**Blog article:** [SOS Animals app - a project for the Clerk x Hashnode Hackathon](https://yuridevat.hashnode.dev/sos-animals-hackathon-project)
 
 <!-- Live view by clicking the badge:  [![Netlify Status](https://api.netlify.com/api/v1/badges/f9a7f8d3-58ca-44ed-a038-ae8d2efd31a5/deploy-status)](https://sos-animal.netlify.app/)-->
 
