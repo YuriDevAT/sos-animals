@@ -17,3 +17,6 @@ The backend functionality is completely missing since I am not familiar with the
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+With Clerk, you can add beautiful, high-conversion Sign Up and Sign In forms to your React application in minutes. After signing in, Clerk empowers your users to take control of their account security with multi-factor authentication and device management. If you've ever found yourself thinking, "there's got to be a better way to build auth" - Clerk was built with you in mind. 
+https://clerk.dev/
