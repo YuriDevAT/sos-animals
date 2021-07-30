@@ -225,10 +225,6 @@ input[type="text"] {
     margin: 10px 0 25px;
 }
 
-::placeholder {
-    margin-left: 4px;
-  }
-
 .map-container {
     height: 270px;
 }
