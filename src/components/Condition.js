@@ -15,23 +15,22 @@ const Condition = ({ prevStep, nextStep, values }) => {
         <div className="form">
             <h1>Who needs help?</h1>
             <form>
-                <label
-                htmlFor="Who needs help?">
-                How many dogs need help?
-                </label>
-                <div className="radio-btn">
-                    <label htmlFor="one">
-                    <input type="radio" id="one" name="number_of_dogs" value={values.one} />
-                    1</label>
-                    <label htmlFor="two">
-                    <input type="radio" id="two" name="number_of_dogs" value={values.two} />
-                    2</label>
-                    <label htmlFor="more">
-                    <input type="radio" id="more" name="number_of_dogs" value={values.many} />
-                    more</label>
-                </div>
-                <label htmlFor="condition">How is the condition of the dog?</label>
-                <div className="checkbox-container large">
+                <fieldset>
+                    <legend>How many dogs need help?</legend>
+                    <div className="radio-btn">
+                        <label htmlFor="one">
+                        <input type="radio" id="one" name="number_of_dogs" value={values.one} />
+                        1</label>
+                        <label htmlFor="two">
+                        <input type="radio" id="two" name="number_of_dogs" value={values.two} />
+                        2</label>
+                        <label htmlFor="more">
+                        <input type="radio" id="more" name="number_of_dogs" value={values.many} />
+                        more</label>
+                    </div>
+                </fieldset>
+                <fieldset className="checkbox-container large">
+                    <legend>How is the condition of the dog?</legend>
                     <label htmlFor="good">
                     <input type="checkbox" id="good" name="condition_of_dog" value={values.good} />
                     Good</label>
@@ -47,7 +46,7 @@ const Condition = ({ prevStep, nextStep, values }) => {
                     <label htmlFor="unknown">
                     <input type="checkbox" id="unknown" name="condition_of_dog" value={values.unknown} />
                     Unknown</label>
-                </div> 
+                </fieldset> 
             </form>
             <footer>
                 <button onClick={Prev} className="btn nav-btn prev">Previous</button>

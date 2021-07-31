@@ -207,7 +207,7 @@ footer {
 .radio-btn, .checkbox-container {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0 25px;
+    margin: 10px 0;
 }
 
 .checkbox-container.large {
@@ -223,6 +223,10 @@ input[type="text"] {
     font-family: 'Inter', sans-serif;
     width: 100%;
     margin: 10px 0 25px;
+}
+
+.dog-size {
+    margin-bottom: 25px;
 }
 
 .map-container {

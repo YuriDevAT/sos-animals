@@ -50,9 +50,9 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
                 <div className="map-container" ref={mapContainer}>
                 </div>
                 <input
-                    placeholder="loaction, area, neighborhood,.."
+                    placeholder=" loaction, area, neighborhood,.."
                     type="text"
-                    aria-label="Where is help needed?"
+                    aria-label="location"
                     value={values.position}
                     onChange={handleChange('position')}
                 />
