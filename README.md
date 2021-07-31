@@ -5,8 +5,6 @@ I created this project to participate in my first hackathon - Clerk x Hashnode H
 
 **Blog article:** [SOS Animals app - a project for the Clerk x Hashnode Hackathon](https://yuridevat.hashnode.dev/sos-animals-hackathon-project)
 
-<!-- Live view by clicking the badge:  [![Netlify Status](https://api.netlify.com/api/v1/badges/f9a7f8d3-58ca-44ed-a038-ae8d2efd31a5/deploy-status)](https://sos-animal.netlify.app/)-->
-
 ![Thumbnail](https://github.com/YuriDevAT/sos-animals/blob/main/public/thumbnail-sos.png)
 
 The idea is that when reporting a dog, the user will start filling out a form about the dog's situation and location.
@@ -17,7 +15,9 @@ When submitting the form, the form should be sent to the nearest NGO station.
 
 The backend functionality is completely missing since I am not familiar with the backend at this stage. So, there is no connection to a database, any NGOs and no way to actually send the form.
 
-I am also currently fixing problems happending during the deployment procress. But you can still clone the project and open it in localhost, or enjoy the preview video below instead :smile:
+Live view by clicking the badge: [![Netlify Status](https://api.netlify.com/api/v1/badges/f9a7f8d3-58ca-44ed-a038-ae8d2efd31a5/deploy-status)](https://sos-animal.netlify.app/)
+
+I am currently working on issues that occurred during deployment. But you can still clone the project and open it in localhost, or enjoy the preview video below instead :smile:
 
 https://user-images.githubusercontent.com/54622834/127658950-b1964a1c-dfc3-4853-be04-9c14a35f569c.mov
 
