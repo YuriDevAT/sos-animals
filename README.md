@@ -17,10 +17,9 @@ The backend functionality is completely missing since I am not familiar with the
 
 Live view by clicking the badge: [![Netlify Status](https://api.netlify.com/api/v1/badges/f9a7f8d3-58ca-44ed-a038-ae8d2efd31a5/deploy-status)](https://sos-animal.netlify.app/)
 
-I am currently working on issues that occurred during deployment. But you can still clone the project and open it in localhost, or enjoy the preview video below instead :smile:
+You can also clone the project and open it in localhost, or enjoy the preview video below instead :smile:
 
 https://user-images.githubusercontent.com/54622834/127658950-b1964a1c-dfc3-4853-be04-9c14a35f569c.mov
-
 
 
 # Getting Started with Create React App
