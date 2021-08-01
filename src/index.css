@@ -174,6 +174,12 @@ h1 {
     text-transform: capitalize;
 }
 
+.steps {
+    font-size: 12px;
+    text-align: center;
+    margin-top: -15px;
+}
+
 footer {
     position: absolute;
     bottom: 50px;

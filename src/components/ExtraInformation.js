@@ -14,6 +14,7 @@ const ExtraInformation = ({ prevStep, nextStep, handleChange, values }) => {
     return (
         <div className="form">
             <h1>Extra information</h1>
+            <p className="steps">Step 2 of 3</p>
             <form>
                 <label htmlFor="type">What type of dog is it?</label>
                     <input

@@ -43,6 +43,7 @@ const Position = ({ prevStep, nextStep, handleChange, values }) => {
     return (
         <div className="form">
             <h1>Where is the dog?</h1>
+            <p className="steps">Step 3 of 3</p>
             <form>
                 <div className="map-sidebar">
                     Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}

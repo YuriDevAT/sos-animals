@@ -14,6 +14,7 @@ const Condition = ({ prevStep, nextStep, values }) => {
     return (
         <div className="form">
             <h1>Who needs help?</h1>
+            <p className="steps">Step 1 of 3</p>
             <form>
                 <fieldset>
                     <legend>How many dogs need help?</legend>
@@ -30,7 +31,7 @@ const Condition = ({ prevStep, nextStep, values }) => {
                     </div>
                 </fieldset>
                 <fieldset className="checkbox-container large">
-                    <legend>How is the condition of the dog?</legend>
+                    <legend>Condition of the dog?</legend>
                     <label htmlFor="good">
                     <input type="checkbox" id="good" name="condition_of_dog" value={values.good} />
                     Good</label>
