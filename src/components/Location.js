@@ -3,7 +3,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from '!mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-mapboxgl.accessToken = process.env.REACT_APP_MAP_ACCESS_TOKEN;
+mapboxgl.accessToken = "pk.eyJ1IjoiaG9ycm9yIiwiYSI6ImNrcm1qNnRpbjFhczkycGxpZzYzMDA2bTYifQ.KQ3G_5evHkaDQ8qJT_OjhA";
 
 const Position = ({ prevStep, nextStep, handleChange, values }) => {
     const Next = e => {
