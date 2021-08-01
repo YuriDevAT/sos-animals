@@ -2,6 +2,18 @@
   "name": "sos-animals",
   "version": "0.1.0",
   "private": true,
+  "description": "App to report abandoned animals to the nearest NGO",
+  "keywords": ["animals", "abandoned", "dog", "report", "map"],
+  "homepage": "https://github.com/YuriDevAT/sos-animals/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/YuriDevAT/sos-animals/issues"
+  },
+  "license": "MIT",
+  "author": "Juia Undeutsch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YuriDevAT/sos-animals" 
+  },
   "dependencies": {
     "@clerk/clerk-react": "^1.15.0",
     "@testing-library/jest-dom": "^5.11.10",
