@@ -4,7 +4,6 @@
   "private": true,
   "description": "App to report abandoned animals to the nearest NGO",
   "keywords": ["animals", "abandoned", "dog", "report", "map"],
-  "homepage": "https://github.com/YuriDevAT/sos-animals/blob/main/README.md",
   "bugs": {
     "url": "https://github.com/YuriDevAT/sos-animals/issues"
   },
