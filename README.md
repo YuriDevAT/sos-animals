@@ -1,7 +1,7 @@
 # Description
 
 This app will help abandoned animals get help from Animal welfare organizations in Romania when people reporting them via this app.
-I created this project to participate in my first hackathon - Clerk x Hashnode Hackathon June 2021. So, check out my article about the project and my experience in the hackathon. 
+I created this project to participate in my first hackathon - Clerk x Hashnode Hackathon July 2021. So, check out my article about the project and my experience in the hackathon. 
 
 🏆 This project is one of the the Runner Up Winners. 🥳
 
