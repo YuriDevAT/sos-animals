@@ -19,7 +19,7 @@ give them the possibility to stay connected with the NGOs and get information
 about the condition of the dog.
 When submitting the form, the form should be sent to the nearest NGO station.
 
-To participate in the Hackathon, it was a requirement to implement CLerk
+To participate in the Hackathon, it was a requirement to implement Clerk
 Authantication, but it was finally removed because no authantication should be
 necessary to use the app.
 
