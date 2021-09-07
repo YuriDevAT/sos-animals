@@ -2,9 +2,9 @@
 
 This app will help abandoned animals get help from Animal welfare organizations
 in Romania when people reporting them via this app.
-I created this project to participate in my first hackathon - Clerk x Hashnode
-Hackathon July 2021. So, check out my article about the project and my experience
-in the hackathon.
+I created this project using React to participate in my first hackathon - Clerk
+x Hashnode Hackathon July 2021. So, check out my article about the project and
+my experience in the hackathon.
 
 🏆 This project is one of the Runner Up Winners. 🥳
 
@@ -39,6 +39,11 @@ https://user-images.githubusercontent.com/54622834/127658950-b1964a1c-dfc3-4853-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Getting Started with Figma
+
+The design and thumbnail was created using [Figma](https://www.figma.com), a
+collaborative interface design tool for free.
 
 # Getting Started with Clerk
 
