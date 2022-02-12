@@ -1,5 +1,7 @@
 # Description
 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 This app will help abandoned animals get help from Animal welfare organizations
 in Romania when people reporting them via this app.
 I created this project using React to participate in my first hackathon - Clerk

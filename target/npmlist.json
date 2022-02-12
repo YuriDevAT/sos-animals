@@ -1,0 +1,1 @@
+{"version":"0.1.0","name":"sos-animals","dependencies":{"@testing-library/jest-dom":{"version":"5.16.2"},"@testing-library/react":{"version":"12.1.2"},"@testing-library/user-event":{"version":"13.5.0"},"mapbox-gl":{"version":"2.7.0"},"react-dom":{"version":"17.0.2"},"react-scripts":{"version":"5.0.0"},"react":{"version":"17.0.2"}}}
