@@ -1,4 +1,3 @@
-import React from 'react';
 import Formular from './components/Formular';
 import Header from './components/Header';
 
