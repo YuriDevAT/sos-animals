@@ -1,4 +1,4 @@
-const logo = require('../img/home.png');
+const logo = require('../assets/home.png');
 
 const Home = ({ nextStep }: any) => {
   const Next = (e: { preventDefault: () => void }) => {
