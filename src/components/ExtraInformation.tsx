@@ -1,9 +1,4 @@
-const ExtraInformation = ({
-  prevStep,
-  nextStep,
-  handleChange,
-  values,
-}: any) => {
+function ExtraInformation({ prevStep, nextStep, handleChange, values }: any) {
   const Next = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     nextStep();
@@ -19,15 +14,17 @@ const ExtraInformation = ({
       <h1>Extra information</h1>
       <p className='steps'>Step 2 of 3</p>
       <form>
-        <label htmlFor='type'>What type of dog is it?</label>
-        <input
-          type='text'
-          id='type'
-          name='type'
-          placeholder=' young, old, Laprador, Husky,..'
-          value={values.typeOfDog}
-          onChange={handleChange('typeOfDog')}
-        />
+        <label htmlFor='type'>
+          What type of dog is it?
+          <input
+            type='text'
+            id='type'
+            name='type'
+            placeholder=' young, old, Laprador, Husky,..'
+            value={values.typeOfDog}
+            onChange={handleChange('typeOfDog')}
+          />
+        </label>
         <fieldset className='dog-size'>
           <legend>How big is the dog?</legend>
           <div className='checkbox-container'>
@@ -60,26 +57,28 @@ const ExtraInformation = ({
             </label>
           </div>
         </fieldset>
-        <label htmlFor='time'>When did you see the dog?</label>
-        <input
-          placeholder=' morning, noon, 4pm,..'
-          type='text'
-          id='time'
-          name='time'
-          value={values.when}
-          onChange={handleChange('when')}
-        />
+        <label htmlFor='time'>
+          When did you see the dog?
+          <input
+            placeholder=' morning, noon, 4pm,..'
+            type='text'
+            id='time'
+            name='time'
+            value={values.when}
+            onChange={handleChange('when')}
+          />
+        </label>
       </form>
       <footer>
-        <button onClick={Prev} className='btn nav-btn prev'>
+        <button onClick={Prev} className='btn nav-btn prev' type='button'>
           Previous
         </button>
-        <button onClick={Next} className='btn nav-btn next'>
+        <button onClick={Next} className='btn nav-btn next' type='button'>
           Next
         </button>
       </footer>
     </div>
   );
-};
+}
 
 export default ExtraInformation;

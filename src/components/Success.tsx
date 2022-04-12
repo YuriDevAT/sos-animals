@@ -1,4 +1,4 @@
-const Success = () => {
+function Success() {
   return (
     <div className='success'>
       <h1>Successfully reported!</h1>
@@ -10,6 +10,6 @@ const Success = () => {
       </a>
     </div>
   );
-};
+}
 
 export default Success;

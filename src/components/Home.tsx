@@ -1,6 +1,6 @@
 const logo = require('../assets/home.png');
 
-const Home = ({ nextStep }: any) => {
+function Home({ nextStep }: any) {
   const Next = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     nextStep();
@@ -14,11 +14,11 @@ const Home = ({ nextStep }: any) => {
         the form in this app. An animal welfare organisation nearby will be
         notified and help the animal as soon as possible.
       </p>
-      <button onClick={Next} className='btn home-btn'>
+      <button onClick={Next} className='btn home-btn' type='submit'>
         Report animal
       </button>
     </div>
   );
-};
+}
 
 export default Home;

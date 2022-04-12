@@ -1,4 +1,4 @@
-const Condition = ({ prevStep, nextStep, values }: any) => {
+function Condition({ prevStep, nextStep, values }: any) {
   const Next = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     nextStep();
@@ -96,15 +96,15 @@ const Condition = ({ prevStep, nextStep, values }: any) => {
         </fieldset>
       </form>
       <footer>
-        <button onClick={Prev} className='btn nav-btn prev'>
+        <button onClick={Prev} className='btn nav-btn prev' type='button'>
           Previous
         </button>
-        <button onClick={Next} className='btn nav-btn next'>
+        <button onClick={Next} className='btn nav-btn next' type='button'>
           Next
         </button>
       </footer>
     </div>
   );
-};
+}
 
 export default Condition;

@@ -1,36 +1,41 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
+import React from 'react';
 import ExtraInformation from './ExtraInformation';
 import Home from './Home';
-import Location from './Location';
+import Position from './Position';
 import Condition from './Condition';
 import Success from './Success';
-import React from 'react';
 
 export default class Formular extends React.Component {
-  state = {
-    step: 1,
-    one: '',
-    two: '',
-    more: '',
-    type: '',
-    small: '',
-    middle: '',
-    large: '',
-    when: '',
-    position: '',
-    good: '',
-    anxious: '',
-    aggressive: '',
-    wounded: '',
-    unknown: '',
-  };
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      step: 1,
+      one: '',
+      two: '',
+      more: '',
+      type: '',
+      small: '',
+      middle: '',
+      large: '',
+      when: '',
+      position: '',
+      good: '',
+      anxious: '',
+      aggressive: '',
+      wounded: '',
+      unknown: '',
+    };
+  }
 
   prevStep = () => {
-    const { step } = this.state;
+    const { step }: any = this.state;
     this.setState({ step: step - 1 });
   };
 
   nextStep = () => {
-    const { step } = this.state;
+    const { step }: any = this.state;
     this.setState({ step: step + 1 });
   };
 
@@ -39,7 +44,7 @@ export default class Formular extends React.Component {
   };
 
   render() {
-    const { step } = this.state;
+    const { step }: any = this.state;
     const {
       one,
       two,
@@ -55,7 +60,7 @@ export default class Formular extends React.Component {
       aggressive,
       wounded,
       unknown,
-    } = this.state;
+    }: any = this.state;
     const values = {
       one,
       two,
@@ -96,7 +101,7 @@ export default class Formular extends React.Component {
         );
       case 4:
         return (
-          <Location
+          <Position
             prevStep={this.prevStep}
             nextStep={this.nextStep}
             handleChange={this.handleChange}
@@ -107,5 +112,6 @@ export default class Formular extends React.Component {
         return <Success />;
       default:
     }
+    return 1;
   }
 }

@@ -1,1 +1,18 @@
-{"version":"0.1.0","name":"sos-animals","dependencies":{"@testing-library/jest-dom":{"version":"5.16.2"},"@testing-library/react":{"version":"12.1.2"},"@testing-library/user-event":{"version":"13.5.0"},"mapbox-gl":{"version":"2.7.0"},"react-dom":{"version":"17.0.2"},"react-scripts":{"version":"5.0.0"},"react":{"version":"17.0.2"}}}
+{
+  "version": "0.1.0",
+  "name": "sos-animals",
+  "dependencies": {
+    "@testing-library/jest-dom": { "version": "5.16.2" },
+    "@testing-library/react": { "version": "12.1.2" },
+    "@testing-library/user-event": { "version": "13.5.0" },
+    "@types/jest": { "version": "27.4.0" },
+    "@types/node": { "version": "17.0.17" },
+    "@types/react-dom": { "version": "17.0.11" },
+    "@types/react": { "version": "17.0.39" },
+    "react-dom": { "version": "17.0.2" },
+    "react-scripts": { "version": "5.0.0" },
+    "react": { "version": "17.0.2" },
+    "sass": { "version": "1.49.7" },
+    "typescript": { "version": "4.5.5" }
+  }
+}

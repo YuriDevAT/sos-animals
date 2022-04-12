@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const Header = () => {
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const hide = () => setIsOpen(false);
@@ -15,8 +15,13 @@ const Header = () => {
   return (
     <header className='header'>
       <nav>
-        <button onClick={toggle} id='menu-btn' aria-label='menu-bar'>
-          <i className='fa fa-bars'></i>
+        <button
+          onClick={toggle}
+          id='menu-btn'
+          aria-label='menu-bar'
+          type='button'
+        >
+          <i className='fa fa-bars' />
         </button>
         <ul className={`menu-links ${isOpen ? 'show' : ''}`}>
           {navigation.map((nav) => (
@@ -29,9 +34,9 @@ const Header = () => {
         </ul>
         <h2>SOS Animals</h2>
       </nav>
-      <div className={`menu-bg ${isOpen ? 'show' : ''}`}></div>
+      <div className={`menu-bg ${isOpen ? 'show' : ''}`} />
     </header>
   );
-};
+}
 
 export default Header;
